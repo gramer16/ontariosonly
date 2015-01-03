@@ -1,0 +1,38 @@
+<h4><strong>Search Results:</strong></h4><br>
+<div class="thumbnail">
+  <div class="center"> 
+    <div class="row">
+     <% @customcabinets.each do |customcabinet| %>
+      <div class="col-md-3">
+      <div class="thumbnail">
+        <%= link_to image_tag(customcabinet.image.url), customcabinet %>
+        <div class="caption">
+          <h4><strong><%= customcabinet.company_name %></strong></h4>
+          <strong><th>Company Website: </th></strong><br>
+            <%= link_to customcabinet.company_website, customcabinet.company_website %><br>
+            <strong><th>Phone Number: </th></strong><br>
+            <%= customcabinet.company_phone %><br>
+           <strong><th>Address: </th></strong><br>
+           <%= customcabinet.address %><br> 
+           <strong><th>City: </th></strong><%= customcabinet.city %><br>
+           <strong><th>Zipcode: </th></strong><br><%= customcabinet.zipcode %><br>
+           <br>
+           
+           <td><%= link_to 'Show', customcabinet, class: "btn btn-warning" %></td>
+        
+        <td><%= link_to 'Edit', edit_customcabinet_path(customcabinet), class: "btn btn-warning" %></td>
+        <td><%= link_to 'Destroy', customcabinet, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-warning" %></td>
+        </div>
+      </div>
+    </div>
+    <% end %>
+    </div>
+
+  </div>
+</div>   
+   
+
+<br>
+<br>
+
+<%= link_to 'Back', customcabinets_path, class: "btn btn-link" %>

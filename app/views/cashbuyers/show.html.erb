@@ -1,0 +1,54 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="thumbnail">
+       <%= image_tag @cashbuyer.image.url %>
+       <br> 
+      <strong><%= @cashbuyer.company_name %></strong>
+      <br>
+      <br>
+      <strong>Company Website:</strong>  
+      <%= link_to @cashbuyer.company_website, @cashbuyer.company_website %><br>
+      
+      
+      <strong>Company contact name:</strong>  
+     <%= @cashbuyer.contact_name %>
+     <br>
+      <strong>Company phone:</strong> 
+     <%= @cashbuyer.company_phone %><br>
+     <strong>Address:</strong>  
+     <%= @cashbuyer.address %><br>
+      <strong>City:</strong>  
+     <%= @cashbuyer.city %><br>
+     <strong>Zipcode:</strong>  
+     <%= @cashbuyer.zipcode %><br>
+    </div>
+     <br>
+
+  </div>
+  <div class="col-md-6">
+    <h5><strong>General Company Information:</strong></h5>
+    <%= @cashbuyer.company_description %>
+  </div>
+
+</div>
+
+  <div class ="col-md-12">
+    <div class= "center">
+   <strong>Map View Location:</strong><br>
+   <br>
+<iframe
+  width="800"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAUOQ0h7ZYU56FuY9ziMMXURoIlHxC3pfY
+    &q=<%= @cashbuyer.address.parameterize %>">
+</iframe>
+
+</div>
+<br>
+<br>  
+ </div>
+
+<%= link_to 'Edit', edit_cashbuyer_path(@cashbuyer), class: "btn btn-link" %> |
+<%= link_to 'Back', cashbuyers_path, class: "btn btn-link" %>
+

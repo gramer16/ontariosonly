@@ -1,0 +1,35 @@
+<h4><strong>Search Results:</strong></h4><br>
+<div class="thumbnail">
+  <div class="center"> 
+    <div class="row">
+     <% @drywalls.each do |drywall| %>
+      <div class="col-md-3">
+      <div class="thumbnail">
+        <%= link_to image_tag(drywall.image.url), drywall %>
+        <div class="caption">
+          <h4><strong><%= drywall.company_name %></strong></h4>
+          <strong><th>Company Website: </th></strong><br>
+            <%= link_to drywall.company_website, drywall.company_website %><br>
+            <strong><th>Phone Number: </th></strong><br>
+            <%= drywall.company_phone %><br>
+           <strong><th>Address: </th></strong><br>
+           <%= drywall.address %><br> 
+           <strong><th>City: </th></strong><%= drywall.city %><br>
+           <strong><th>Zipcode: </th></strong><br><%= drywall.zipcode %><br>
+           <br>
+           
+           <td><%= link_to 'Show', drywall, class: "btn btn-warning" %></td>
+        
+        <td><%= link_to 'Edit', edit_drywall_path(drywall), class: "btn btn-warning" %></td>
+        <td><%= link_to 'Destroy', drywall, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-warning" %></td>
+        </div>
+      </div>
+    </div>
+    <% end %>
+    </div>
+
+  </div>
+</div>   
+   
+<%= link_to 'Back', drywalls_path, class: "btn btn-link"  %>
+
