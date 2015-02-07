@@ -4,8 +4,7 @@
  </div>
 <div class="row" id="featuresHeading">
     <div class="col-12">
-        <font color="cf142b"><h2 style="font-family:Calibri"><strong>Choose Your Advertising Plan Or List a Property For Rent/Sale And Maximize The Customers For Your Business!</strong></h2></font>
-        <p class="lead"></p>
+      <%= t('adtitle_html') %>
     </div>
 </div>
 <div class="row" id="features">
@@ -19,7 +18,7 @@
              <%= image_tag("basicplan.jpg", :size => "330x500", :alt => "Residentials", :style =>"margin-right:25px; margin-top:10px;" ) %>
          </div>
             <p></p>
-            <a href="/subscriptions/new" target="_self" class="btn btn-danger"><strong>SUBSCRIBE</strong></a>
+            <%= link_to t('subscribe'), new_subscription_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
 </div>
  <div class="col-md-4 feature">
@@ -31,7 +30,8 @@
              <%= image_tag("goldplan.jpg", :size => "330x500", :alt => "Residentials", :style =>"margin-right:25px; margin-top:10px;" ) %>
          	</div>
            <p></p>
-            <a href="/subscriptions/new" target="_self" class="btn btn-danger"><strong>SUBSCRIBE</strong></a>
+             <%= link_to t('subscribe'), new_subscription_path, class: "btn btn-default", data: {no_turbolink: true} %>
+           
         </div>
     </div>
 <div class="col-md-4 feature">
@@ -43,24 +43,24 @@
               <%= image_tag("listing.jpg", :size => "330x500", :alt => "Residentials", :style =>"margin-right:25px; margin-top:10px;" ) %>
           </div>
             <p></p>
-            <a href="/subscriptionpackages/new" target="_self" class="btn btn-danger"><strong>POST LISTING</strong></a>
+            <%= link_to t('listing'), new_subscriptionpackage_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="row" id="featuresHeading">
     <div class="col-12">
-        <font color="858585"><h6 style="font-family:Calibri"><strong>*To cancel your subscription please contact us to our customer support email or our customer support phone.</strong></h6></font>
-        <p class="lead"></p>
+        <%= t('adsubtitle_html') %>
+      
     </div>
   </div>
     <div class="row" id="featuresHeading">
     <div class="col-12">
-        <font color="bf0a30"><h4 style="font-family:Calibri"><strong>*Ask for our Platinum and Diamond Packages</strong></h4></font>
-        <p class="lead"></p>
+      <%= t('psubtitle_html') %>
+       
     </div>
     <div class="row" id="featuresHeading">
     <div class="col-12">
-        <font color="bf0a30"><h4 style="font-family:Calibri"><strong>*Ask about our Website Development Service for your business by D&G Global to link your business with Ontario's Only to maximize your clients.</strong></h4></font>
-        <p class="lead"></p>
+      <%= t('wsubtitle_html') %>
+        
     </div>
     
 </div>

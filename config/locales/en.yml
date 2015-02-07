@@ -20,4 +20,58 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  Purchase_or_Lease: Puchase or Lease
+  Service: Services
+  subscribe: SUBSCRIBE
+  listing: POST LISTING
+  title_html: <h4 style="font-family:Calibri", align="center"><font color="bd9130"><font size="10">Everything Real Estate - Only Real Estate</font></font></h4>
+  subtitle_html:  <font color="ff0019"><h2 style="font-family:Calibri"><strong>What are you Looking for?</strong></h2></font>
+        <p class="lead"></p>
+  semititle_html:  <font color="bd9130"><h3 class="panel-title", style="font-family:Calibri"><strong>RESIDENTIAL REAL ESTATE</strong></h3></font>
+  csemititle_html: <font color="bd9130"><h3 class="panel-title", style="font-family:Calibri"><strong>COMMERCIAL REAL ESTATE</strong></h3></font>
+  ssemititle_html: <font color="bd9130"><h3 class="panel-title", style="font-family:Calibri"><strong>REAL ESTATE SERVICES</strong></h3></font>
+  navbar_home: Home
+  navbar_memberships: Advertise a Real Estate Service or Listing
+  navbar_search: Find All in Real Estate
+  navbar_about: About us
+  navbar_language: Language
+  navbar_english: English
+  navbar_french: French
+  navbar_account: Create Account or Sign in
+  navbar_create: Create an Ontario's Only account
+  navbar_signin: Sign in to your Ontario's Only account
+  navbar_notmember: Not a Member?
+  navbar_member: Already a Member?
+  navbar_residential: Residential Property Listing
+  navbar_commercial: Commercial Property Listing
+  navbar_realservices: Real Estate Services
+  adtitle_html:  <font color="cf142b"><h2 style="font-family:Calibri"><strong>Choose Your Advertising Plan Or List a Property For Rent/Sale And Maximize The Customers For Your Business!</strong></h2></font>
+        <p class="lead"></p>
+  adsubtitle_html:   <font color="858585"><h6 style="font-family:Calibri"><strong>*To cancel your subscription please contact us to our customer support email or our customer support phone.</strong></h6></font>
+        <p class="lead"></p>
+  psubtitle_html:  <font color="bf0a30"><h4 style="font-family:Calibri"><strong>*Ask for our Platinum and Diamond Packages</strong></h4></font>
+        <p class="lead"></p>
+  wsubtitle_html: <font color="bf0a30"><h4 style="font-family:Calibri"><strong>*Ask about our Website Development Service for your business by D&G Global to link your business with Ontario's Only to maximize your clients.</strong></h4></font>
+        <p class="lead"></p>
+  contact_html: <h4 style="font-family:Calibri"><strong>Contact Us:</strong></h4>
+  about_html: <h4 style="font-family:Calibri"> <strong> About Us:</strong></h4><h6>Ontario's Only is an online marketing company that offers proffessional advertising service to all real estate professionals in the province of Ontario Canada.</h6>
+  companyinfo: ENTER YOUR COMPANY INFORMATION
+  follow_html: <h4 style="font-family:Calibri"><strong>FOLLOW US<strong></h4>
+  jumbotron_title_html: <h2>Advertise Real Estate Services</h2>
+  businessname: Business Name
+  website: Company Website
+  address: Address
+  zipcode: Zip Code
+  city: city
+  businessphone: Business Phone
+  contactname: Contact Name
+  businessemail: Company Email
+  plan: PLEASE SELECT AN ADVERTISING PLAN
+  paymentinfo: PAYMENT INFORMATION
+  name: Full Name
+  billingaddress: Billing Address
+  email: Email
+  creditcard: Credit Card Number
+  securitycode: Security Code (CVV)
+  cardexpiration: Card Expiration Date
+  submit: Submit my Order

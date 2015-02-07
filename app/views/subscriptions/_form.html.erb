@@ -20,34 +20,34 @@
     <div class="thumbnail">
       <div class="field">
         <div class="left">
-    <%= label_tag :nil, "ENTER YOUR COMPANY INFORMATION" %>
+          <%= label_tag :nil, t('companyinfo') %>
     </div>
   </div>
     <div class="form-group">
       <div class="left">
     <div class="row">
       <div class="col-md-4">
-        <%= label_tag :business_name %><br>
+        <%= label_tag :nil, t('businessname') %><br>
         <%= f.text_field :company_name, class: "form-control" %>
         </div>
         <div class="col-md-4">
-        <%= label_tag :website %><br>
+        <%= label_tag :nil, t('website') %><br>
         <%= f.text_field :website, class: "form-control" %><br>
         </div>
         <div class="col-md-4">
-        <%= label_tag :address %><br>
+        <%= label_tag :nil, t('address') %><br>
         <%= f.text_area :address, class: "form-control" %><br>
         </div>
         <div class="col-md-4">
-        <%= label_tag :zip_code %><br>
+         <%= label_tag :nil, t('zipcode') %><br>
        <%= f.text_field :zipcode, class: "form-control" %>
         </div>
         <div class="col-md-4">
-        <%= label_tag :city %><br>
+         <%= label_tag :nil, t('city') %><br>
         <%= f.text_field :city, class: "form-control" %>
         </div>
         <div class="col-md-4">
-        <%= label_tag :business_phone %><br>
+         <%= label_tag :nil, t('businessphone') %><br>
         <%= f.text_field :phone, class: "form-control" %>
         </div>
       </div>
@@ -57,11 +57,11 @@
       <div class="left">
     <div class="row">
         <div class="col-md-4">
-        <%= label_tag :contact_name %><br>
+        <%= label_tag :nil, t('contactname') %><br>
         <%= f.text_field :contact, class: "form-control" %>
         </div>
         <div class="col-md-4">
-        <%= label_tag :business_email %><br>
+        <%= label_tag :nil, t('businessemail') %><br>
         <%= f.text_field :company_email, class: "form-control" %>
         </div>
         <br>
@@ -73,7 +73,7 @@
     <br>
     
 <div class="left">
-    <%= f.label :name, "PLEASE SELECT A PLAN" %><br>
+    <%= label_tag :nil, t('plan') %><br>
     <%= f.select :name, options_for_select([["Basic Advertising Plan $49.99","Basic"],["Gold Advertising Plan $99.99", "Gold"]]), class: "form-control" %>
   </div>
   <br>
@@ -83,21 +83,21 @@
   <div class="thumbnail">
     <div class="field">
       <div class="left">
-    <%= label_tag :nil, "PAYMENT INFORMATION" %>
+    <%= label_tag :nil, t('paymentinfo') %>
     </div>
   </div>
   <div class="row">
     <div class="left">
       <div class="col-md-4">
-    <%= label_tag :name %><br>
+    <%= label_tag :nil, t('name') %><br>
     <%= f.text_field :card_name, class: "form-control" %>
       </div>
     <div class="col-md-8">
-    <%= label_tag :billing_address %><br>
+    <%= label_tag :nil, t('billingaddress') %><br>
     <%= f.text_field :bill_address, class: "form-control"  %>
     </div>
      <div class="col-md-4">
-    <%= f.label :email %><br>
+    <%= label_tag :nil, t('email') %><br>
     <%= f.text_field :email, class: "form-control"  %>
     </div>
   </div>
@@ -111,7 +111,7 @@
     <div class="row">
       
       <div class="col-md-4">
-      <%= label_tag :card_number, "Credit Card Number" %>
+      <%= label_tag :card_number, t('creditcard') %>
       <%= text_field_tag :card_number, nil, name: nil, class: "form-control"  %>
       </div>
         <div class="col-md-2">
@@ -125,7 +125,7 @@
     <div class="row">
       <%= image_tag("cardsecurity.png", :size => "40x30", :alt => "Credit" ) %> 
       <div class="col-md-2">
-        <%= label_tag :nil, "Security Code(CVV)" %><br>
+        <%= label_tag :nil, t('securitycode') %><br>
       <%= text_field_tag :card_code, nil, name: nil, class: "form-control"%>
       </div>
        </div>
@@ -133,7 +133,7 @@
     </div>
     <div class="form-group">
       <div class="left">
-      <%= label_tag :card_month, "Card Expiration" %>
+      <%= label_tag :card_month, t('cardexpiration') %>
     <div class="row">
       <div class="col-md-3">
     <%= select_month nil, {add_month_numbers: true}, {name: nil, id: "card_month", class: "form-control"}  %>
@@ -158,7 +158,7 @@
 <% end %>
 <div class="left">
     <div class="actions">
-    <%= f.submit "Submit my Order", class: "btn btn-warning" %>
+    <%= f.submit t('submit'), class: "btn btn-success" %>
   </div>
 </div>
 <% end %>
