@@ -45,6 +45,30 @@ en:
   navbar_residential: Residential Property Listing
   navbar_commercial: Commercial Property Listing
   navbar_realservices: Real Estate Services
+  searchresidential_html: <h4><strong>Find a Residential Listing</strong></h4>
+  searchtextbox: Enter a Location (Address, City, Zipcode)
+  advancesearch: ADVANCED SEARCH OPTIONS
+  salerent: Property for Purchase or Lease
+  propertytype: Type of Property
+  status: Property Status
+  foreclosure: Is a Floreclosure Property?
+  construction: Type of Construction
+  bedrooms: Bedrooms
+  fullbathrooms: Full Bathrooms
+  halfbathrooms: Half Bathrooms
+  minsqft: Min Square Feet
+  maxsqft: Max Square Feet
+  minprice: Min Price 
+  maxprice: Max Price
+  searchbtn: Search
+  listed_by: Listed By %{user}
+  new_residential: Add New Residential Listing
+  squarefeet: Square Feet
+  privatepool: Private Pool
+  waterview: Water View
+  golf: Golf Course
+  water: Water Front
+  jumbotron_residentialtitle_html: 
   adtitle_html:  <font color="cf142b"><h2 style="font-family:Calibri"><strong>Choose Your Advertising Plan Or List a Property For Rent/Sale And Maximize The Customers For Your Business!</strong></h2></font>
         <p class="lead"></p>
   adsubtitle_html:   <font color="858585"><h6 style="font-family:Calibri"><strong>*To cancel your subscription please contact us to our customer support email or our customer support phone.</strong></h6></font>

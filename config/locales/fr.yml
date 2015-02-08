@@ -32,6 +32,30 @@ fr:
   navbar_residential: Résidentiel Propriété Listing
   navbar_commercial: Commercial Propriété Listing
   navbar_realservices: Services Immobiliers
+  searchtextbox: Entrer une localisation(Adresse, Vile, Code postal)
+  advancesearch: OPTIONS DE RECHERCHE AVANCÉES
+  salerent: Logement à Acheter ou à Louer
+  propertytype: Type de Propriété
+  status: La situation
+  construction: Type de Construction
+  foreclosure: Forclusion
+  bedrooms: Chambres
+  fullbathrooms: Salles de Bain Complètes
+  halfbathrooms: Salles de Bains de Moitié
+  minsqft: Pieds Carrés Minimaux
+  maxsqft: Pieds carrés Maximales
+  minprice: Prix Minimum 
+  maxprice: Prix Maximum
+  searchbtn: Recherche
+  listed_by: Posté par %{user}
+  new_residential: Ajouter une nouvelle propriété
+  squarefeet: Pieds Carrés
+  privatepool: Piscine Privée
+  waterview: Vue sur l'eau
+  golf: Terrain de Golf
+  water: Bord de l'eau
+  jumbotron_residentialtitle_html: <h2>Résidentiel Propriété Listing</h2>
+  searchresidential_html: <h4><strong>Trouver l'immobilier Résidentiel</strong></h4>
   adtitle_html: <font color="cf142b"><h2 style="font-family:Calibri"><strong>Choisissez votre plan de publicité Ou Proposer un hébergement en Location/Vente Et maximiser les clients pour votre entreprise!</strong></h2></font>
         <p class="lead"></p>
   adsubtitle_html:   <font color="858585"><h6 style="font-family:Calibri"><strong>*Pour annuler votre abonnement se il vous plaît contactez-nous à notre e-mail de soutien à la clientèle ou notre téléphone de support client..</strong></h6></font>
