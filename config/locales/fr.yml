@@ -47,6 +47,8 @@ fr:
   minprice: Prix Minimum 
   maxprice: Prix Maximum
   searchbtn: Recherche
+  searchservices: RECHERCHE
+  servicestitle_html: <h2 style="font-family:Arial">Tous les services immobiliers de l'Ontario</h2>
   listed_by: Posté par %{user}
   new_residential: Ajouter une nouvelle propriété
   squarefeet: Pieds Carrés
@@ -55,6 +57,67 @@ fr:
   golf: Terrain de Golf
   water: Bord de l'eau
   jumbotron_residentialtitle_html: <h2>Résidentiel Propriété Listing</h2>
+  architect_html: <h3 class="panel-title">ARCHITECTES</h3>
+  airconditioner_html: <h3 class="panel-title">CLIMATISEUR/ CHAUFFAGE / VENTILATION</h3>
+  asphalt_html: <h3 class="panel-title">ENTREPRISES D'ASPHALTE</h3>
+  banks_html:  <h3 class="panel-title">BANQUES</h3>
+  builder_html:  <h3 class="panel-title">CONSTRUCTEURS</h3>
+  building_html: <h3 class="panel-title">MATéRIAUX DE CONSTRUCTION</h3>
+  cashbuyer_html: <h3 class="panel-title">ACHETEUR AU COMPTANT</h3>
+  cabinet_html: <h3 class="panel-title">CABINETS</h3>
+  cement_html:  <h3 class="panel-title">CIMENT ET DU BÉTON</h3>
+  cleaning_html:  <h3 class="panel-title">SERVICE DE NETTOYAGE</h3>
+  countertops_html: <h3 class="panel-title">COMPTOIR ET SURFACES</h3>
+  cleaningremoval_html:  <h3 class="panel-title">NETTOYAGE EVACUATION</h3>
+  decks_html: <h3 class="panel-title">TERRASSES ET LES CLôTURES</h3>
+  drywall_html: <h3 class="panel-title">DRYWALL</h3>
+  electricians_html: <h3 class="panel-title">ÉLECTRICIENS</h3>
+  eav_html:  <h3 class="panel-title">GOUTTIÈRES</h3>
+  exterior_html: <h3 class="panel-title">EXTÉRIEUR DESIGNERS</h3>
+  engineer_html: <h3 class="panel-title">INGÉNIEURS</h3>
+  flooring_html: <h3 class="panel-title">REVÉTEMENT DE SOL</h3>
+  framing_html: <h3 class="panel-title">ENCADREMENT</h3>
+  foundation_html: <h3 class="panel-title">FONDATIONS (NOUVEAU + RÉPARATION)</h3>
+  fireplace_html: <h3 class="panel-title">FOYER</h3>
+  general_html: <h3 class="panel-title">CONTRACTEUR</h3>
+  homeinspector_html: <h3 class="panel-title">INSPECTEUR DE LA MAISON</h3>
+  hardmoney_html: <h3 class="panel-title">PRÊTEUR</h3>
+  theater_html: <h3 class="panel-title">CINÉMA MAISON</h3>
+  insulation_html:  <h3 class="panel-title">ISOLATION</h3>
+  interior_html: <h3 class="panel-title">DESIGNERS D'INTÉRIEUR</h3>
+  wood_html: <h3 class="panel-title">BOIS / VINYLE / ALUMINIUM</h3>
+  light_html: <h3 class="panel-title">D'ÉCLAIRAGE / VENTILATEUR</h3>
+  landscaping_html: <h3 class="panel-title">LANDSCAPING</h3>
+  landsurveyors_html: <h3 class="panel-title">ARPENTEURS-GÉOMÈTRES</h3>
+  moving_html: <h3 class="panel-title">DÉMÉNAGEURS</h3>
+  mortgage_html: <h3 class="panel-title">COURTIERS EN HYPOTHÈQUES</h3>
+  mold_html: <h3 class="panel-title">INSPECTEURS DE LA MOULE</h3>
+  paint_html: <h3 class="panel-title">PEINTURE</h3>
+  plumbing_html: <h3 class="panel-title">PLOMBERIE</h3>
+  privatefirm_html: <h3 class="panel-title">ENTREPRISES PRIVÉES D'ÉVALUATION</h3>
+  propertyfirm_html: <h3 class="panel-title">SOCIÉTÉS DE GESTION DE PROPRIÉTÉ</h3>
+  poolcleaner_html: <h3 class="panel-title">NETTOYEURS DE PISCINE</h3>
+  poolrepair_html: <h3 class="panel-title">RÉPARATION DE PISCINES</h3>
+  realtor_html: <h3 class="panel-title">AGENTS IMMOBILIERS</h3>
+  accountant_html: <h3 class="panel-title">COMPTABLES IMMOBILIER</h3>
+  lawyer_html: <h3 class="panel-title">AVOCATS EN DROIT IMMOBILIER</h3>
+  realestate_html: <h3 class="panel-title">SOCIÉTÉS IMMOBILIÉRES</h3>
+  rentalpropertyfirm_html: <h3 class="panel-title">LOYER FIRM</h3>
+  remodel_html: <h3 class="panel-title">SPÉCIALISTE DE RÉNOVATION</h3>
+  roofing_html: <h3 class="panel-title">TOITURE</h3>
+  security_html: <h3 class="panel-title">SOCIÉTÉS DE SÉCURITÉ</h3>
+  septic_html: <h3 class="panel-title">SPÉCIALISTES SEPTIQUES</h3>
+  solarscreen_html: <h3 class="panel-title">ÉCRAN SOLAIRE/TRAITEMENT DE FENÉTRE</h3>
+  staging_html: <h3 class="panel-title">SOCIÉTÉS D'ARRÊT</h3>
+  soffit_html: <h3 class="panel-title">SOFFITE FASCIA</h3>
+  spapool_html: <h3 class="panel-title">PISCINES SPA VENTES/INSTALERS/RÉPARATION</h3>
+  solarenergy_html: <h3 class="panel-title">ÉNERGIE SOLAIRE</h3>
+  dissable_html: <h3 class="panel-title">PERSONNES TROISIèME ACCUEIL ÉQUIPEMENT OU HANDICAPES ACCUEIL ÉQUIPEMENT</h3>
+  tax_html: <h3 class="panel-title">SPÉCIALISTE DE LA FISCALITÉ</h3>
+  termite_html: <h3 class="panel-title">INSPECTEURS TERMITES</h3>
+  titlecompany_html: <h3 class="panel-title">LES SOCIÉTÉS DE TITRE</h3>
+  windows_html: <h3 class="panel-title">FABRICANTS WINDOWS ET INSTALLATEURS</h3>
+  weather_html: <h3 class="panel-title">CONDITIONS MÉTÉOS / HIVERNAGE</h3>
   searchresidential_html: <h4><strong>Trouver l'immobilier Résidentiel</strong></h4>
   adtitle_html: <font color="cf142b"><h2 style="font-family:Calibri"><strong>Choisissez votre plan de publicité Ou Proposer un hébergement en Location/Vente Et maximiser les clients pour votre entreprise!</strong></h2></font>
         <p class="lead"></p>

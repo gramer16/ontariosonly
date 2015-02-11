@@ -1,6 +1,6 @@
 <div class="row" id="featuresHeading">
     <div class="col-12">
-        <h2 style="font-family:Arial">All Ontario Real Estate Services</h2>
+         <%= t('servicestitle_html') %>
         <p class="lead"></p>
     </div>
 </div>
@@ -10,32 +10,34 @@
     <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title"><%= link_to "ARCHITECTS", arquitects_path %></h3>
+                <%= t('architect_html') %>
                
             </div>
             <%= image_tag("architect.png", :size => "100x100", :alt => "Architect", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/arquitects" target="_self" class="btn btn-default">Search</a>
+             <%= link_to t('searchservices'), arquitects_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
     </div>
 <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">AIR CONDITIONER/ HEATING / VENTILATION</h3>
+                <%= t('airconditioner_html') %>
+                
             </div>
              <%= image_tag("airconditioner.png", :size => "85x85", :alt => "Architect", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/airconditioners" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), airconditioners_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
 </div>
 <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">ASPHALT COMPANIES</h3>
+                <%= t('asphalt_html') %>
+                
             </div>
               <%= image_tag("ASPHALT.png", :size => "100x100", :alt => "Architect", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/asphalts" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), asphalts_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
 </div>
@@ -43,32 +45,35 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">BANKS</h3>
+                  <%= t('banks_html') %>
+               
             </div>
              <%= image_tag("privatebank.png", :size => "100x100", :alt => "Bank", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/privatebanks" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), privatebanks_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">BUILDERS</h3>
+                <%= t('builder_html') %>
+               
             </div>
             
              <%= image_tag("builder.jpg", :size => "100x100", :alt => "CashBuyer", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/cashbuyers" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), cashbuyers_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
          <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">BUILDING MATERIALS</h3>
+                <%= t('building_html') %>
+                
             </div>
              <%= image_tag("buildingmaterial.jpg", :size => "100x100", :alt => "CustomCabinets", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/customcabinets" target="_self" class="btn btn-default">Search</a>
+             <%= link_to t('searchservices'), customcabinets_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
 </div>
@@ -76,32 +81,33 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">CASH BUYERS</h3>
+                <%= t('cashbuyer_html') %>
             </div>
              <%= image_tag("cashbuyer.png", :size => "100x100", :alt => "Bank", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/privatebanks" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), privatebanks_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">CABINETS</h3>
+                <%= t('cabinet_html') %>
             </div>
             
              <%= image_tag("customcabinets.png", :size => "100x100", :alt => "CashBuyer", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/cashbuyers" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), cashbuyers_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">CEMENT AND CONCRETE</h3>
+                <%= t('cement_html') %>
+               
             </div>
              <%= image_tag("cement.jpg", :size => "100x100", :alt => "CustomCabinets", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/customcabinets" target="_self" class="btn btn-default">Search</a>
+             <%= link_to t('searchservices'), customcabinets_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
 </div>
@@ -110,32 +116,33 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">CLEANING SERVICES</h3>
+                <%= t('cleaning_html') %>
+               
             </div>
              <%= image_tag("cleaning.png", :size => "100x100", :alt => "Countertop", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/countertops" target="_self" class="btn btn-default">Search</a>
+             <%= link_to t('searchservices'), countertops_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">COUNTERTOP AND SURFACES</h3>
+                 <%= t('countertops_html') %>
             </div>
              <%= image_tag("countertop.jpg", :size => "100x100", :alt => "Drywall", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/drywalls" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), drywalls_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
          <div class="col-md-4 feature">
         
             <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">CLEANING REMOVAL WASTE</h3>
+                <%= t('cleaningremoval_html') %>
             </div>
              <%= image_tag("removal.png", :size => "100x100", :alt => "Drywall", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/drywalls" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), drywalls_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
 </div>
@@ -144,31 +151,33 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">DECKS AND FENCES</h3>
+                <%= t('decks_html') %>
+                
             </div>
              <%= image_tag("fences.png", :size => "100x100", :alt => "Countertop", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/countertops" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), countertops_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">DRYWALL</h3>
+                 <%= t('drywall_html') %>
             </div>
              <%= image_tag("drywall.jpg", :size => "100x100", :alt => "Drywall", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/drywalls" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), drywalls_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
          <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">ELECTRICIANS</h3>
+                <%= t('electricians_html') %>
+                
             </div>
              <%= image_tag("electrician.png", :size => "100x100", :alt => "Framing", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/framings" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), framings_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
 </div>
@@ -176,31 +185,34 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">EAVESTROUPHINGS</h3>
+                 <%= t('eav_html') %>
+               
             </div>
              <%= image_tag("eavestrouphing.jpg", :size => "100x100", :alt => "Countertop", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/countertops" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), countertops_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">EXTERIOR DESIGNERS</h3>
+                <%= t('exterior_html') %>
+                
             </div>
              <%= image_tag("exterior.png", :size => "100x100", :alt => "Drywall", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/drywalls" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), drywalls_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
          <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">ENGINEERS</h3>
+                <%= t('engineer_html') %>
+                
             </div>
              <%= image_tag("engineer.jpg", :size => "100x100", :alt => "Framing", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/framings" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), framings_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
 </div>
@@ -209,31 +221,34 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">FLOORING</h3>
+                 <%= t('flooring_html') %>
+                
             </div>
              <%= image_tag("flooring.jpg", :size => "100x100", :alt => "Flooring", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/floorings" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), floorings_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">FRAMING</h3>
+                 <%= t('framing_html') %>
+                
             </div>
              <%= image_tag("framing.jpg", :size => "100x100", :alt => "GeneralContractor", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/generalcontractors" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), generalcontractors_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
          <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">FOUNDATION (NEW + REPAIRS)</h3>
+                 <%= t('foundation_html') %>
+                
             </div>
              <%= image_tag("foundationrepair.png", :size => "100x100", :alt => "Homeinspector", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/homeinspectors" target="_self" class="btn btn-default">Search</a>
+             <%= link_to t('searchservices'), homeinspectors_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
 </div>
@@ -242,31 +257,33 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">FIREPLACE / CHIMNEG</h3>
+                <%= t('fireplace_html') %>
             </div>
              <%= image_tag("fireplace.png", :size => "100x100", :alt => "Flooring", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/floorings" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), floorings_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">GENERAL CONTRACTORS</h3>
+                <%= t('general_html') %>
+                
             </div>
              <%= image_tag("generalcontrator.jpg", :size => "100x100", :alt => "GeneralContractor", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/generalcontractors" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), generalcontractors_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
          <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">HOME INSPECTORS</h3>
+                <%= t('homeinspector_html') %>
+                
             </div>
              <%= image_tag("homeinspector.png", :size => "100x100", :alt => "Homeinspector", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/homeinspectors" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), homeinspectors_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
 </div>
@@ -275,31 +292,35 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">HARDMONEY LENDERS</h3>
+                <%= t('hardmoney_html') %>
+                
             </div>
              <%= image_tag("hardmoneylender.jpg", :size => "100x100", :alt => "Hardmoney", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/hardmoneylenders" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), interiordesigners_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">HOME THEATERS</h3>
+                <%= t('theater_html') %>
+                
+                
             </div>
              <%= image_tag("home.jpg", :size => "100x100", :alt => "InteriorDesing", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/interiordesigners" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), interiordesigners_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
          <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">INSULATION</h3>
+                <%= t('insulation_html') %>
+               
             </div>
             <%= image_tag("insulation.png", :size => "100x100", :alt => "Insulation", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/insulations" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), insulations_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
 </div>
@@ -308,31 +329,34 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">INTERIOR DESIGNERS</h3>
+                <%= t('interior_html') %>
+                
             </div>
              <%= image_tag("interior.jpg", :size => "100x100", :alt => "Hardmoney", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/hardmoneylenders" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), interiordesigners_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">WOOD / VINYL / ALUMINUM</h3>
+                <%= t('wood_html') %>
+                
             </div>
              <%= image_tag("wood.jpg", :size => "100x100", :alt => "InteriorDesing", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/interiordesigners" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), interiordesigners_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
          <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">LIGHTING STORES FIXTURES/FANS</h3>
+                <%= t('light_html') %>
+                
             </div>
             <%= image_tag("lighting.jpg", :size => "100x100", :alt => "Insulation", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/insulations" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), interiordesigners_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
 </div>
@@ -341,33 +365,38 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">LANDSCAPING</h3>
+                <%= t('landscaping_html') %>
+                
             </div>
              <%= image_tag("landscaping.png", :size => "120x100", :alt => "Landscaping", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/landscapings" target="_self" class="btn btn-default">Search</a>
+            <p></p>
+            <%= link_to t('searchservices'), interiordesigners_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">LAND SURVEYORS</h3>
+                <%= t('landsurveyors_html') %>
+                
             </div>
              <%= image_tag("landsurveyors.png", :size => "120x100", :alt => "LandSurveyor", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/landsurveyors" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), interiordesigners_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
          <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">MOVING COMPANIES</h3>
+                <%= t('moving_html') %>
+                
             </div>
              
              <%= image_tag("movincompany.jpg", :size => "120x100", :alt => "Moving", :style =>"margin-right:25px; margin-top:10px;" ) %>
             
             <p></p>
-            <a href="/movincompanies" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), interiordesigners_path, class: "btn btn-default", data: {no_turbolink: true} %>
+            
         </div>
         </div>
 </div>
@@ -375,32 +404,36 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">MORTGAGE BROKERS</h3>
+                <%= t('mortgage_html') %>
+                
             </div>
               <%= image_tag("mortagagebrokers.png", :size => "120x100", :alt => "Mortgage", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/mortgages" target="_self" class="btn btn-default">Search</a>
+             <%= link_to t('searchservices'), interiordesigners_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">MOLD INSPECTORS</h3>
+                <%= t('mold_html') %>
+                
             </div>
              <%= image_tag("moldinspector.png", :size => "100x100", :alt => "Mortgage", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/molds" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), interiordesigners_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
          <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">PAINTING</h3>
+                <%= t('paint_html') %>
+                
             </div>
              
              <%= image_tag("painting.png", :size => "100x100", :alt => "Mortgage", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/paintings" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), interiordesigners_path, class: "btn btn-default", data: {no_turbolink: true} %>
+            
         </div>
         </div>
 </div>
@@ -409,32 +442,35 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">PLUMBING</h3>
+                <%= t('plumbing_html') %>
+                
             </div>
              <%= image_tag("plumbing.jpg", :size => "100x100", :alt => "Plumbing", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/plumbings" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), interiordesigners_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">PRIVATE ACCESEMENT FIRMS</h3>
+                <%= t('privatefirm_html') %>
+                
             </div>
              <%= image_tag("privateaccesementfirms.png", :size => "100x100", :alt => "Plumbing", :style =>"margin-right:25px; margin-top:10px;" ) %>
              
             <p></p>
-            <a href="/privatefirms" target="_self" class="btn btn-default">Search</a>
+             <%= link_to t('searchservices'), interiordesigners_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
          <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">PROPERTY MANAGEMENT FIRMS</h3>
+                <%= t('propertyfirm_html') %>
+                
             </div>
              <%= image_tag("propertymanagementfirms.png", :size => "100x84", :alt => "Plumbing", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/propertymanagementfirms" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), interiordesigners_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
 </div>
@@ -442,32 +478,34 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">POOL CLEANERS</h3>
+                 <%= t('poolcleaner_html') %>
+                
             </div>
              <%= image_tag("poolcleaner.png", :size => "100x100", :alt => "Plumbing", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/poolcleaners" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), interiordesigners_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">POOL REPAIRS</h3>
+                 <%= t('poolrepair_html') %>
+                
             </div>
              <%= image_tag("poolrepair.png", :size => "100x100", :alt => "Plumbing", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/poolrepairs" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), interiordesigners_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
          <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">REALTORS</h3>
+                <%= t('realtor_html') %>
+                
             </div>
-             <link><a href="/securities">
              <%= image_tag("realtors.png", :size => "100x100", :alt => "Realtors", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/realtors" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), interiordesigners_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
 </div>
@@ -476,31 +514,34 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">REAL ESTATE ACCOUNTANTS</h3>
+                 <%= t('accountant_html') %>
+                
             </div>
              <%= image_tag("realestateaccounts.png", :size => "100x100", :alt => "Accountants", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/accountants" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), accountants_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">REAL ESTATE LAWYERS</h3>
+                <%= t('lawyer_html') %>
+                
             </div>
               <%= image_tag("realestatefirms.jpg", :size => "100x100", :alt => "Lawyers", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/lawyers" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), accountants_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
          <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">REAL ESTATE FIRMS</h3>
+                <%= t('realestate_html') %>
+                
             </div>
             <%= image_tag("realestatefirms.png", :size => "100x100", :alt => "Lawyers", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/real_estatefirms" target="_self" class="btn btn-default">Search</a>
+             <%= link_to t('searchservices'), accountants_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
 </div>
@@ -508,32 +549,34 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">RENTAL PROPERTIES FIRMS/MANAGEMENT</h3>
+                <%= t('rentalpropertyfirm_html') %>
+                
             </div>
              <%= image_tag("rental.png", :size => "100x100", :alt => "Lawyers", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/rentalproperties" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), accountants_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">REMODEL / RENOVATION SPECIALISTS</h3>
+                <%= t('remodel_html') %>
+                
             </div>
-             <link><a href="/windows">
               <%= image_tag("remodel.jpeg", :size => "100x100", :alt => "Lawyers", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/securities" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), accountants_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
          <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">ROOFING</h3>
+                <%= t('roofing_html') %>
+                
             </div>
              <%= image_tag("roofing.png", :size => "100x100", :alt => "Septics", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/septics" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), accountants_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
 </div>
@@ -542,32 +585,36 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">SECURITY COMPANIES</h3>
+                <%= t('security_html') %>
+                
             </div>
              <%= image_tag("securitycompany.png", :size => "100x100", :alt => "Lawyers", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/rentalproperties" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), accountants_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">SEPTIC SPECIALISTS</h3>
+                <%= t('septic_html') %>
+                
             </div>
-             <link><a href="/windows">
+            
               <%= image_tag("septic.png", :size => "100x100", :alt => "Lawyers", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/securities" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), accountants_path, class: "btn btn-default", data: {no_turbolink: true} %>
+            
         </div>
         </div>
          <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">SOLAR SCREENS/WINDOW TREATMENT</h3>
+                <%= t('solarscreen_html') %>
+                
             </div>
              <%= image_tag("windowstreatment.png", :size => "100x100", :alt => "Septics", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/septics" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), accountants_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
 </div>
@@ -576,31 +623,34 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">STAGING COMPANIES</h3>
+                <%= t('staging_html') %>
+                
             </div>
               <%= image_tag("staging.png", :size => "100x100", :alt => "Septics", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/solarscreens" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), accountants_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">SOFFIT FACIA</h3>
+                <%= t('soffit_html') %>
+                
             </div>
              <%= image_tag("soffit.png", :size => "100x100", :alt => "Septics", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/stagings" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), accountants_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
          <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">SPA POOLS SALES/INSTALERS/REPAIRS</h3>
+                <%= t('spapool_html') %>
+                
             </div>
              <%= image_tag("poolspa.png", :size => "100x100", :alt => "Septics", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/taxspecialists" target="_self" class="btn btn-default">Search</a>
+             <%= link_to t('searchservices'), accountants_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
 </div>
@@ -608,31 +658,35 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">SOLAR ENERGY</h3>
+                <%= t('solarenergy_html') %>
+                
             </div>
               <%= image_tag("solar.jpg", :size => "100x100", :alt => "Septics", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/solarscreens" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), accountants_path, class: "btn btn-default", data: {no_turbolink: true} %>
+            
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">SENIOR OR DISSABLED PEOPLE HOME OR OFFICE EQUIPMENT</h3>
+                <%= t('dissable_html') %>
+                
             </div>
              <%= image_tag("senior.jpg", :size => "100x100", :alt => "Septics", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/stagings" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), accountants_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
          <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">TAX SPECIALIST</h3>
+                <%= t('tax_html') %>
+                
             </div>
              <%= image_tag("taxspecialist.png", :size => "140x100", :alt => "Septics", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/taxspecialists" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), accountants_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
 </div>
@@ -640,31 +694,35 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">TERMITE INSPECTORS</h3>
+                <%= t('termite_html') %>
+                
             </div>
              <%= image_tag("termiteinspector.png", :size => "100x100", :alt => "Septics", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/termiteinspectors" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), accountants_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">TITLE COMPANIES</h3>
+                <%= t('titlecompany_html') %>
+                
             </div>
              <%= image_tag("titlecompany.png", :size => "100x100", :alt => "Septics", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/titlecompanies" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), accountants_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
          <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">WINDOWS MANUFACTURERS AND INSTALLERS</h3>
+                <%= t('windows_html') %>
+                
             </div>
              <%= image_tag("window.png", :size => "120x84", :alt => "Septics", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/windows" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), accountants_path, class: "btn btn-default", data: {no_turbolink: true} %>
+            
         </div>
         </div>
 </div>
@@ -672,11 +730,12 @@
         <div class="col-md-4 feature">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">WEATHER PROOFING / WINTERIZING</h3>
+                <%= t('weather_html') %>
+                
             </div>
               <%= image_tag("weatherproof.jpg", :size => "100x100", :alt => "Septics", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <a href="/solarscreens" target="_self" class="btn btn-default">Search</a>
+            <%= link_to t('searchservices'), accountants_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
