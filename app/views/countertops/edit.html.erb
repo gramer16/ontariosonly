@@ -1,6 +1,11 @@
-<h1>Editing countertop</h1>
+<div class="jumbotron">
+  <div class="left">
+    <%= t('jumbotron_countertoptitle_html') %>
+  
+ </div>
+ </div>
 
 <%= render 'form' %>
 
 <%= link_to 'Show', @countertop %> |
-<%= link_to 'Back', countertops_path %>
+<%= link_to t('back'), countertops_path %>

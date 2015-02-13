@@ -1,6 +1,11 @@
-<h1>Editing flooring</h1>
+<div class="jumbotron">
+  <div class="left">
+    <%= t('jumbotron_flooringstitle_html') %>
+  
+ </div>
+ </div>
 
 <%= render 'form' %>
 
 <%= link_to 'Show', @flooring %> |
-<%= link_to 'Back', floorings_path %>
+<%= link_to t('back'), floorings_path %>

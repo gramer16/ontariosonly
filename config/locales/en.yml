@@ -73,6 +73,7 @@ en:
   maxprice: Max Price
   searchbtn: Search
   searchservices: SEARCH
+  add_service: Add a Service
   servicestitle_html:  <h2 style="font-family:Arial">All Ontario Real Estate Services</h2>
   listed_by: Listed By %{user}
   new_residential: Add New Residential Listing
@@ -180,3 +181,19 @@ en:
   bodycompany_html: <h4><strong>Ontario's Only</strong> is an online marketing company that offers proffessional advertising service to all real estate professionals in the province of Canada.<br><br><strong>Ontario's Only</strong> is part of one of the <strong>D&G Global</strong> marketing software strategies that offer their clients to maximize the customers and their businesses. <br><br><strong>D&G Global</strong> is a software development consulting company that offer customize techologies services like website development services for your business to link them with <strong>Ontario's Only</strong> to maximize your clients through the newest web development technologies as well as marketing strategies. <br></h4>
   subbodycompany_html: <h4><strong>HOW TO CONTACT US</strong></h4>
   morecompany_html: <h4>If you would like to contact us with any queries or comments please send an email to <strong>customers@ontariosonly.ca</strong> or call to <strong>1-844-ONT-ONLY</strong> <br></p></h4>
+  jumbotron_flooringstitle_html: <h2>Flooring Services</h2>
+  jumbotron_drywalltitle_html: <h2>Drywall Services</h2>
+  jumbotron_cabinetstitle_html: <h2>Cabinets Services</h2>
+  jumbotron_countertoptitle_html: <h2>Countertop Services</h2>
+  jumbotron_architecttitle_html:  <h2>Architects Services</h2>
+  searchservice_html: <h4><strong>Find a Service</strong></h4>
+  servicecompanywebsite: Company Website
+  servicecompanyphone: Company Phone
+  servicecompanyaddress: Address
+  addservice: New Real Estate Service
+  searchresults_html: <h4><strong>SEARCH RESULTS:</strong></h4><br>
+  back: Back
+  companycontactname: Company Contact Name
+  companyservicephone: Company Phone
+  generalcompany: Company Information Details
+  mapview: Map View Location

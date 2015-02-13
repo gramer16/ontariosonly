@@ -1,4 +1,4 @@
-<h4><strong>Search Results:</strong></h4><br>
+<%= t('searchresults_html') %>
 <div class="thumbnail">
   <div class="center"> 
     <div class="row">
@@ -8,20 +8,20 @@
         <%= link_to image_tag(drywall.image.url), drywall %>
         <div class="caption">
           <h4><strong><%= drywall.company_name %></strong></h4>
-          <strong><th>Company Website: </th></strong><br>
+          <strong><th><%= label_tag :nil, t('servicecompanywebsite') %></th></strong><br>
             <%= link_to drywall.company_website, drywall.company_website %><br>
-            <strong><th>Phone Number: </th></strong><br>
+            <strong><th><%= label_tag :nil, t('servicecompanyphone') %></th></strong><br>
             <%= drywall.company_phone %><br>
-           <strong><th>Address: </th></strong><br>
+           <strong><th><%= label_tag :nil, t('servicecompanyaddress') %></th></strong><br>
            <%= drywall.address %><br> 
-           <strong><th>City: </th></strong><%= drywall.city %><br>
-           <strong><th>Zipcode: </th></strong><br><%= drywall.zipcode %><br>
+           <strong><th><%= label_tag :nil, t('city') %></th></strong><%= drywall.city %><br>
+           <strong><th><%= label_tag :nil, t('zipcode') %></th></strong><br><%= drywall.zipcode %><br>
            <br>
            
-           <td><%= link_to 'Show', drywall, class: "btn btn-warning" %></td>
+           <td><%= link_to 'Show', drywall, class: "btn btn-success" %></td>
         
-        <td><%= link_to 'Edit', edit_drywall_path(drywall), class: "btn btn-warning" %></td>
-        <td><%= link_to 'Destroy', drywall, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-warning" %></td>
+        <td><%= link_to 'Edit', edit_drywall_path(drywall), class: "btn btn-success" %></td>
+        <td><%= link_to 'Destroy', drywall, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-success" %></td>
         </div>
       </div>
     </div>
@@ -29,7 +29,8 @@
     </div>
 
   </div>
-</div>   
-   
-<%= link_to 'Back', drywalls_path, class: "btn btn-link"  %>
+</div>  
+
+<%= link_to t('back'), drywalls_path, class: "btn btn-link"  %>
+
 

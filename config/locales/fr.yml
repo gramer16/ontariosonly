@@ -32,7 +32,7 @@ fr:
   navbar_residential: Résidentiel Propriété Listing
   navbar_commercial: Commercial Propriété Listing
   navbar_realservices: Services Immobiliers
-  searchtextbox: Entrer une localisation(Adresse, Vile, Code postal)
+  searchtextbox: Entrer une localisation (Adresse, Vile, Code postal)
   advancesearch: OPTIONS DE RECHERCHE AVANCÉES
   salerent: Logement à Acheter ou à Louer
   propertytype: Type de Propriété
@@ -58,6 +58,7 @@ fr:
   maxprice: Prix Maximum
   searchbtn: Recherche
   searchservices: RECHERCHE
+  add_service: Ajouter un Service
   servicestitle_html: <h2 style="font-family:Arial">Tous les services immobiliers de l'Ontario</h2>
   listed_by: Posté par %{user}
   new_residential: Ajouter une nouvelle propriété
@@ -167,6 +168,22 @@ fr:
   bodycompany_html: <h4><strong>Ontario's Only</strong> est une société de marketing en ligne qui offre un service professionnel de la publicité à tous les professionnels de l'immobilier dans la province du Canada.<br><br><strong>Ontario's Only</strong> fait partie de l'un des <strong>D&G Global</strong> stratégies de logiciels de marketing qui offrent à leurs clients de maximiser les clients et leurs entreprises. <br><br><strong>D&G Global</strong> est une société de conseil de développement de logiciels qui offrent des services de technologies personnalisées comme les services de développement de site web pour votre entreprise de les relier avec <strong>Ontario's Only</strong> pour maximiser vos clients par le biais de technologies de développement web les plus récents ainsi que des stratégies de marketing. <br></h4>
   subbodycompany_html: <p><h4><strong>COMMENT NOUS CONTACTER</strong></h4>
   morecompany_html: <h4>Si vous souhaitez nous contacter pour toutes questions ou des commentaires se il vous plaît envoyez un courriel à <strong>customers@ontariosonly.ca</strong> ou appelez au <strong>1-844-ONT-ONLY</strong><br></p></h4>
+  jumbotron_flooringstitle_html: <h2>Revêtement de Sol Services</h2>
+  jumbotron_drywalltitle_html: <h2>Cloisons Sèches Services</h2>
+  jumbotron_cabinetstitle_html: <h2>Armoires de Cuisine Services</h2>
+  jumbotron_countertoptitle_html: <h2>Services de Comptoir</h2>
+  jumbotron_architecttitle_html:  <h2>Les Services d'architectes</h2> 
+  searchservice_html: <h4><strong>Trouver un Service</strong></h4>
+  servicecompanywebsite: Site de L'entreprise
+  servicecompanyphone: Téléphone de la Compagnie
+  servicecompanyaddress: Adresse
+  addservice: Ajouter le service immobilier
+  searchresults_html: <h4><strong>RECHERCHE:</strong></h4><br>
+  back: Arrière
+  companycontactname: Nom de l'entreprise de Contact
+  companyservicephone: téléphone de la Compagnie
+  generalcompany: Les détails de l'information de l'entreprise
+  mapview: Carte Emplacement
   date:
     abbr_day_names:
       - dim

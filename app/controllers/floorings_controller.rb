@@ -1,6 +1,13 @@
 class FlooringsController < ApplicationController
   before_action :set_flooring, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+      @floorings = Flooring.search(params[:search])
+    else
+      @floorings = Accountant.all
+    end
+  end
   def index
     @floorings = Flooring.all
   end

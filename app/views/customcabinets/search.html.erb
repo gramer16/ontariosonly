@@ -1,4 +1,4 @@
-<h4><strong>Search Results:</strong></h4><br>
+<%= t('searchresults_html') %>
 <div class="thumbnail">
   <div class="center"> 
     <div class="row">
@@ -8,20 +8,20 @@
         <%= link_to image_tag(customcabinet.image.url), customcabinet %>
         <div class="caption">
           <h4><strong><%= customcabinet.company_name %></strong></h4>
-          <strong><th>Company Website: </th></strong><br>
+          <strong><th><%= label_tag :nil, t('servicecompanywebsite') %></th></strong><br>
             <%= link_to customcabinet.company_website, customcabinet.company_website %><br>
-            <strong><th>Phone Number: </th></strong><br>
+            <strong><th><%= label_tag :nil, t('servicecompanyphone') %></th></strong><br>
             <%= customcabinet.company_phone %><br>
-           <strong><th>Address: </th></strong><br>
+           <strong><th><%= label_tag :nil, t('servicecompanyaddress') %></th></strong><br>
            <%= customcabinet.address %><br> 
-           <strong><th>City: </th></strong><%= customcabinet.city %><br>
-           <strong><th>Zipcode: </th></strong><br><%= customcabinet.zipcode %><br>
+           <strong><th><%= label_tag :nil, t('city') %></th></strong><%= customcabinet.city %><br>
+           <strong><th><%= label_tag :nil, t('zipcode') %></th></strong><br><%= customcabinet.zipcode %><br>
            <br>
            
-           <td><%= link_to 'Show', customcabinet, class: "btn btn-warning" %></td>
+           <td><%= link_to 'Show', customcabinet, class: "btn btn-success" %></td>
         
-        <td><%= link_to 'Edit', edit_customcabinet_path(customcabinet), class: "btn btn-warning" %></td>
-        <td><%= link_to 'Destroy', customcabinet, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-warning" %></td>
+        <td><%= link_to 'Edit', edit_customcabinet_path(customcabinet), class: "btn btn-success" %></td>
+        <td><%= link_to 'Destroy', customcabinet, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-success" %></td>
         </div>
       </div>
     </div>
@@ -29,10 +29,9 @@
     </div>
 
   </div>
-</div>   
+</div>               
    
 
 <br>
 <br>
-
-<%= link_to 'Back', customcabinets_path, class: "btn btn-link" %>
+<%= link_to t('back'), customcabinets_path, class: "btn btn-link"  %>

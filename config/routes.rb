@@ -19,7 +19,13 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :customcabinets
+  resources :customcabinets do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
+
 
   resources :cashbuyers do
     collection do
@@ -93,12 +99,21 @@ Rails.application.routes.draw do
 
   resources :generalcontractors
 
-  resources :floorings
+  resources :floorings do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
   resources :framings
 
-  resources :drywalls
-
+  resources :drywalls do
+      collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
   resources :orders
   
   devise_for :users
