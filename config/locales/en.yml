@@ -46,8 +46,19 @@ en:
   navbar_commercial: Commercial Property Listing
   navbar_realservices: Real Estate Services
   searchresidential_html: <h4><strong>Find a Residential Listing</strong></h4>
+  searchcommercial_html: <h4><strong>Find a Commercial Listing</strong></h4>
   searchtextbox: Enter a Location (Address, City, Zipcode)
   advancesearch: ADVANCED SEARCH OPTIONS
+  price: Price
+  realestatecompany: Real Estate Company
+  officephone: Office Phone
+  commercialwebsite: Company Website
+  listingagent: Listing Agent
+  agentphone: Realtor Phone
+  agentemail: Realtor Phone
+  suites: Total Units or Suites
+  floornumbers: Floor Numbers
+  details: Property Details
   salerent: Property for Purchase or Lease
   propertytype: Type of Property
   status: Property Status
@@ -65,12 +76,15 @@ en:
   servicestitle_html:  <h2 style="font-family:Arial">All Ontario Real Estate Services</h2>
   listed_by: Listed By %{user}
   new_residential: Add New Residential Listing
+  new_commercial: Add New Commercial Listing
   squarefeet: Square Feet
   privatepool: Private Pool
   waterview: Water View
   golf: Golf Course
   water: Water Front
   jumbotron_residentialtitle_html: <h2>Residential Property Listing</h2>
+  jumbotron_commercialtitle_html: <h2>Commercial Property Listing</h2>
+  privacy_html: <h2 style="font-family:Arial"><strong>PRIVACY POLICY</strong></h2>
   architect_html: <h3 class="panel-title">ARCHITECTS</h3>
   airconditioner_html: <h3 class="panel-title">AIR CONDITIONER/ HEATING / VENTILATION</h3>
   asphalt_html: <h3 class="panel-title">ASPHALT COMPANIES</h3>
@@ -162,3 +176,7 @@ en:
   securitycode: Security Code (CVV)
   cardexpiration: Card Expiration Date
   submit: Submit my Order
+  ourcompany_html:  <h2 style="font-family:Arial"><strong>OUR COMPANY</strong></h2>
+  bodycompany_html: <h4><strong>Ontario's Only</strong> is an online marketing company that offers proffessional advertising service to all real estate professionals in the province of Canada.<br><br><strong>Ontario's Only</strong> is part of one of the <strong>D&G Global</strong> marketing software strategies that offer their clients to maximize the customers and their businesses. <br><br><strong>D&G Global</strong> is a software development consulting company that offer customize techologies services like website development services for your business to link them with <strong>Ontario's Only</strong> to maximize your clients through the newest web development technologies as well as marketing strategies. <br></h4>
+  subbodycompany_html: <h4><strong>HOW TO CONTACT US</strong></h4>
+  morecompany_html: <h4>If you would like to contact us with any queries or comments please send an email to <strong>customers@ontariosonly.ca</strong> or call to <strong>1-844-ONT-ONLY</strong> <br></p></h4>

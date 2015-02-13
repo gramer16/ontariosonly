@@ -40,6 +40,16 @@ fr:
   construction: Type de Construction
   foreclosure: Forclusion
   bedrooms: Chambres
+  price: Prix
+  details: Détails du bien
+  agentphone: Agent Immobilier Téléphone
+  agentemail: Agent Immobilier Email
+  commercialwebsite: Site de l'entreprise
+  realestatecompany: Société Immobilière
+  officephone: Téléphone de Bureau
+  suites: Total des Suites
+  floornumbers: Numéros d'étage
+  listingagent: Agent Immobilier
   fullbathrooms: Salles de Bain Complètes
   halfbathrooms: Salles de Bains de Moitié
   minsqft: Pieds Carrés Minimaux
@@ -51,18 +61,21 @@ fr:
   servicestitle_html: <h2 style="font-family:Arial">Tous les services immobiliers de l'Ontario</h2>
   listed_by: Posté par %{user}
   new_residential: Ajouter une nouvelle propriété
+  new_commercial: Ajouter une nouvelle propriété
   squarefeet: Pieds Carrés
   privatepool: Piscine Privée
   waterview: Vue sur l'eau
   golf: Terrain de Golf
   water: Bord de l'eau
+  privacy_html: <h2 style="font-family:Arial"><strong>POLITIQUE DE CONFIDENTIALITÉ</strong></h2>
   jumbotron_residentialtitle_html: <h2>Résidentiel Propriété Listing</h2>
+  jumbotron_commercialtitle_html: <h2>Commercial Propriété Listing</h2>
   architect_html: <h3 class="panel-title">ARCHITECTES</h3>
   airconditioner_html: <h3 class="panel-title">CLIMATISEUR/ CHAUFFAGE / VENTILATION</h3>
   asphalt_html: <h3 class="panel-title">ENTREPRISES D'ASPHALTE</h3>
   banks_html:  <h3 class="panel-title">BANQUES</h3>
   builder_html:  <h3 class="panel-title">CONSTRUCTEURS</h3>
-  building_html: <h3 class="panel-title">MATéRIAUX DE CONSTRUCTION</h3>
+  building_html: <h3 class="panel-title">MATÉRIAUX DE CONSTRUCTION</h3>
   cashbuyer_html: <h3 class="panel-title">ACHETEUR AU COMPTANT</h3>
   cabinet_html: <h3 class="panel-title">CABINETS</h3>
   cement_html:  <h3 class="panel-title">CIMENT ET DU BÉTON</h3>
@@ -119,6 +132,7 @@ fr:
   windows_html: <h3 class="panel-title">FABRICANTS WINDOWS ET INSTALLATEURS</h3>
   weather_html: <h3 class="panel-title">CONDITIONS MÉTÉOS / HIVERNAGE</h3>
   searchresidential_html: <h4><strong>Trouver l'immobilier Résidentiel</strong></h4>
+  searchcommercial_html: <h4><strong>Trouver l'immobilier Commerciale</strong></h4>
   adtitle_html: <font color="cf142b"><h2 style="font-family:Calibri"><strong>Choisissez votre plan de publicité Ou Proposer un hébergement en Location/Vente Et maximiser les clients pour votre entreprise!</strong></h2></font>
         <p class="lead"></p>
   adsubtitle_html:   <font color="858585"><h6 style="font-family:Calibri"><strong>*Pour annuler votre abonnement se il vous plaît contactez-nous à notre e-mail de soutien à la clientèle ou notre téléphone de support client..</strong></h6></font>
@@ -149,6 +163,10 @@ fr:
   securitycode: Code de Sécurité(CVV)
   cardexpiration: Date d'expiration
   submit: Soumettre la Commande
+  ourcompany_html: <h2 style="font-family:Arial"><strong>NOTRE ENTREPRISE</strong></h2>
+  bodycompany_html: <h4><strong>Ontario's Only</strong> est une société de marketing en ligne qui offre un service professionnel de la publicité à tous les professionnels de l'immobilier dans la province du Canada.<br><br><strong>Ontario's Only</strong> fait partie de l'un des <strong>D&G Global</strong> stratégies de logiciels de marketing qui offrent à leurs clients de maximiser les clients et leurs entreprises. <br><br><strong>D&G Global</strong> est une société de conseil de développement de logiciels qui offrent des services de technologies personnalisées comme les services de développement de site web pour votre entreprise de les relier avec <strong>Ontario's Only</strong> pour maximiser vos clients par le biais de technologies de développement web les plus récents ainsi que des stratégies de marketing. <br></h4>
+  subbodycompany_html: <p><h4><strong>COMMENT NOUS CONTACTER</strong></h4>
+  morecompany_html: <h4>Si vous souhaitez nous contacter pour toutes questions ou des commentaires se il vous plaît envoyez un courriel à <strong>customers@ontariosonly.ca</strong> ou appelez au <strong>1-844-ONT-ONLY</strong><br></p></h4>
   date:
     abbr_day_names:
       - dim
