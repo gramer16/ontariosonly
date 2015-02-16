@@ -24,7 +24,7 @@
       <div class="thumbnail">
         <%= link_to image_tag(accountant.image.url), accountant %>
         <div class="caption">
-          <h4><strong><%= accountant.company_name %></strong></h4>
+          <h4><strong><%= link_to accountant.company_name, accountant %></strong></h4>
           <strong><th><%= label_tag :nil, t('servicecompanywebsite') %></th></strong><br>
             <%= link_to accountant.company_website, accountant.company_website %><br>
             <strong><th><%= label_tag :nil, t('servicecompanyphone') %></th></strong><br>
@@ -34,11 +34,10 @@
            <strong><th><%= label_tag :nil, t('city') %></th></strong><%= accountant.city %><br>
            <strong><th><%= label_tag :nil, t('zipcode') %></th></strong><br><%= accountant.zipcode %><br>
            <br>
-           
-           <td><%= link_to 'Show', accountant, class: "btn btn-success" %></td>
-        
+           <% if user_signed_in? && current_user.admin? %>
         <td><%= link_to 'Edit', edit_accountant_path(accountant), class: "btn btn-success" %></td>
         <td><%= link_to 'Destroy', accountant, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-success" %></td>
+        <% end %>
         </div>
       </div>
     </div>
@@ -50,4 +49,6 @@
    
 <br>
 <br>
+<% if user_signed_in? && current_user.admin? %>
 <%= link_to t('add_service'), new_accountant_path, class: "btn btn-success" %>
+<% end %>
