@@ -93,11 +93,21 @@ Rails.application.routes.draw do
 
   resources :insulations
 
-  resources :hardmoneys
+  resources :hardmoneys do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
   resources :homeinspectors
 
-  resources :generalcontractors
+  resources :generalcontractors do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
   resources :floorings do
     collection do
@@ -106,7 +116,12 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :framings
+  resources :framings do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
   resources :drywalls do
       collection do

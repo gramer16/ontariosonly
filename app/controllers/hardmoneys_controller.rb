@@ -1,6 +1,16 @@
 class HardmoneysController < ApplicationController
   before_action :set_hardmoney, only: [:show, :edit, :update, :destroy]
 
+   def search
+    if params[:search].present?
+      @hardmoneys = Hardmoney.search(params[:search])
+    else
+      @hardmoneys = Hardmoney.all
+    end
+  end
+  
+
+
   def index
     @hardmoneys = Hardmoney.all
   end

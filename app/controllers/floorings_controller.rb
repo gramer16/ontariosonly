@@ -5,7 +5,7 @@ class FlooringsController < ApplicationController
     if params[:search].present?
       @floorings = Flooring.search(params[:search])
     else
-      @floorings = Accountant.all
+      @floorings = Flooring.all
     end
   end
   def index

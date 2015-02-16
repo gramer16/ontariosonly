@@ -172,7 +172,13 @@ fr:
   jumbotron_drywalltitle_html: <h2>Cloisons Sèches Services</h2>
   jumbotron_cabinetstitle_html: <h2>Armoires de Cuisine Services</h2>
   jumbotron_countertoptitle_html: <h2>Services de Comptoir</h2>
-  jumbotron_architecttitle_html:  <h2>Les Services d'architectes</h2> 
+  jumbotron_architecttitle_html:  <h2>Les Services d'architectes</h2>
+  jumbotron_accountantstitle_html: <h2>Comptables Services</h2> 
+  jumbotron_airconditionertitle_html: <h2>Services de Climatiseur et de Ventilation</h2>
+  jumbotron_cashbuyertitle_html: <h2>Services de Acheteur de Trésorerie</h2>
+  jumbotron_framingtitle_html: <h2>Des services d'encadrement</h2>
+  jumbotron_contratortitle_html: <h2>Contracteur Services</h2>
+  jumbotron_hardmoneytitle_html: <h2>Les Services de l'argent de Prêteurs</h2>
   searchservice_html: <h4><strong>Trouver un Service</strong></h4>
   servicecompanywebsite: Site de L'entreprise
   servicecompanyphone: Téléphone de la Compagnie

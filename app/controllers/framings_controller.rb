@@ -1,5 +1,13 @@
 class FramingsController < ApplicationController
   before_action :set_framing, only: [:show, :edit, :update, :destroy]
+  def search
+    if params[:search].present?
+      @framings = Framing.search(params[:search])
+    else
+      @framings = Framing.all
+    end
+  end
+  
 
   def index
     @framings = Framing.all

@@ -1,6 +1,16 @@
 class GeneralcontractorsController < ApplicationController
   before_action :set_generalcontractor, only: [:show, :edit, :update, :destroy]
 
+   def search
+    if params[:search].present?
+      @generalcontractors = Generalcontractor.search(params[:search])
+    else
+      @generalcontractors = Generalcontractor.all
+    end
+  end
+  
+
+
   def index
     @generalcontractors = Generalcontractor.all
   end

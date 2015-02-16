@@ -186,6 +186,12 @@ en:
   jumbotron_cabinetstitle_html: <h2>Cabinets Services</h2>
   jumbotron_countertoptitle_html: <h2>Countertop Services</h2>
   jumbotron_architecttitle_html:  <h2>Architects Services</h2>
+  jumbotron_accountantstitle_html: <h2>Accountants Services</h2>
+  jumbotron_airconditionertitle_html: <h2>Air Conditioner and Ventilation Services</h2>
+  jumbotron_cashbuyertitle_html: <h2>Cashbuyer Services</h2>
+  jumbotron_framingtitle_html: <h2>Framing Services</h2>
+  jumbotron_contratortitle_html: <h2>General Contractors Services</h2>
+  jumbotron_hardmoneytitle_html: <h2>Hardmoney Lenders Services</h2>
   searchservice_html: <h4><strong>Find a Service</strong></h4>
   servicecompanywebsite: Company Website
   servicecompanyphone: Company Phone

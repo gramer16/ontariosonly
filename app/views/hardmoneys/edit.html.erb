@@ -1,6 +1,12 @@
-<h1>Editing hardmoney</h1>
+<div class="jumbotron">
+  <div class="left">
+    <%= t('jumbotron_hardmoneytitle_html') %>
+  
+ </div>
+ </div>
+
 
 <%= render 'form' %>
 
 <%= link_to 'Show', @hardmoney %> |
-<%= link_to 'Back', hardmoneys_path %>
+<%= link_to t('back'), hardmoneys_path %>

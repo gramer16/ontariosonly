@@ -1,3 +1,4 @@
+
 <div class="row">
   <div class="col-md-6">
     <div class="thumbnail">
@@ -6,27 +7,27 @@
       <strong><%= @airconditioner.company_name %></strong>
       <br>
       <br>
-      <strong>Company Website:</strong>  
+      <strong><%= label_tag :nil, t('servicecompanywebsite') %></strong>  
       <%= link_to @airconditioner.company_website, @airconditioner.company_website %><br>
       
       
-      <strong>Company contact name:</strong>  
+      <strong><%= label_tag :nil, t('companycontactname') %></strong>  
      <%= @airconditioner.contact_name %>
      <br>
-      <strong>Company phone:</strong> 
+      <strong><%= label_tag :nil, t('companyservicephone') %></strong> 
      <%= @airconditioner.company_phone %><br>
-     <strong>Address:</strong>  
+     <strong><%= label_tag :nil, t('servicecompanyaddress') %></strong>  
      <%= @airconditioner.address %><br>
-      <strong>City:</strong>  
+      <strong><%= label_tag :nil, t('city') %></strong>  
      <%= @airconditioner.city %><br>
-     <strong>Zipcode:</strong>  
+     <strong><%= label_tag :nil, t('zipcode') %></strong>  
      <%= @airconditioner.zipcode %><br>
     </div>
      <br>
 
   </div>
   <div class="col-md-6">
-    <h5><strong>General Company Information:</strong></h5>
+    <h5><strong><%= label_tag :nil, t('generalcompany') %></strong></h5>
     <%= @airconditioner.company_description %>
   </div>
 
@@ -34,7 +35,7 @@
 
   <div class ="col-md-12">
     <div class= "center">
-   <strong>Map View Location:</strong><br>
+   <strong><%= label_tag :nil, t('mapview') %></strong><br>
    <br>
 <iframe
   width="800"
@@ -52,4 +53,4 @@
 
 
 <%= link_to 'Edit', edit_airconditioner_path(@airconditioner), class: "btn btn-link" %> |
-<%= link_to 'Back', airconditioners_path, class: "btn btn-link" %>
+<%= link_to t('back'), airconditioners_path, class: "btn btn-link" %>

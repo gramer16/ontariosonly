@@ -1,37 +1,44 @@
+<div class="jumbotron">
+  <div class="left">
+    <%= t('jumbotron_cashbuyertitle_html') %>
+  
+ </div>
+ </div>
+
 <div class="left"> 
-<h4><strong>Find a New Cash Buyer</strong></h4>
+<%= t('searchservice_html') %>
    <%= form_tag search_cashbuyers_path, method: :get do %>
           <p>
-        <%= text_field :search, params[:search], placeholder: "Enter a Location (City, Zipcode)",class: "form-control" %>
+        <%= text_field :search, params[:search], placeholder: t('searchtextbox'), class: "form-control" %>
         <br>
-         <%= submit_tag "Search", name: nil ,class: "btn btn-warning" %>
+         <%= submit_tag t('searchbtn'), name: nil ,class: "btn btn-success" %>
       </p>
     </div>
   <% end %>
 
-<div class="thumbnail">
+  <div class="thumbnail">
   <div class="center"> 
     <div class="row">
-      <% @cashbuyers.each do |cashbuyer| %>
+    <% @cashbuyers.each do |cashbuyer| %>
       <div class="col-md-3">
       <div class="thumbnail">
         <%= link_to image_tag(cashbuyer.image.url), cashbuyer %>
         <div class="caption">
           <h4><strong><%= cashbuyer.company_name %></strong></h4>
-          <strong><th>Company Website: </th></strong><br>
+          <strong><th><%= label_tag :nil, t('servicecompanywebsite') %></th></strong><br>
             <%= link_to cashbuyer.company_website, cashbuyer.company_website %><br>
-            <strong><th>Phone Number: </th></strong><br>
+            <strong><th><%= label_tag :nil, t('servicecompanyphone') %></th></strong><br>
             <%= cashbuyer.company_phone %><br>
-           <strong><th>Address: </th></strong><br>
+           <strong><th><%= label_tag :nil, t('servicecompanyaddress') %></th></strong><br>
            <%= cashbuyer.address %><br> 
-           <strong><th>City: </th></strong><%= cashbuyer.city %><br>
-           <strong><th>Zipcode: </th></strong><br><%= cashbuyer.zipcode %><br>
+           <strong><th><%= label_tag :nil, t('city') %></th></strong><%= cashbuyer.city %><br>
+           <strong><th><%= label_tag :nil, t('zipcode') %></th></strong><br><%= cashbuyer.zipcode %><br>
            <br>
            
-           <td><%= link_to 'Show', cashbuyer, class: "btn btn-warning" %></td>
+           <td><%= link_to 'Show', cashbuyer, class: "btn btn-success" %></td>
         
-        <td><%= link_to 'Edit', edit_cashbuyer_path(cashbuyer), class: "btn btn-warning" %></td>
-        <td><%= link_to 'Destroy', cashbuyer, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-warning" %></td>
+        <td><%= link_to 'Edit', edit_cashbuyer_path(cashbuyer), class: "btn btn-success" %></td>
+        <td><%= link_to 'Destroy', cashbuyer, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-success" %></td>
         </div>
       </div>
     </div>
@@ -44,5 +51,4 @@
 
 <br>
 <br>
-
-<%= link_to 'New Cashbuyer', new_cashbuyer_path, class: "btn btn-warning" %>
+<%= link_to t('add_service'), new_cashbuyer_path, class: "btn btn-success" %>
