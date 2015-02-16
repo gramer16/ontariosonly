@@ -1,6 +1,17 @@
 class HomeinspectorsController < ApplicationController
   before_action :set_homeinspector, only: [:show, :edit, :update, :destroy]
 
+   def search
+    if params[:search].present?
+      @homeinspectors = Homeinspector.search(params[:search])
+    else
+      @homeinspectors = Homeinspector.all
+    end
+  end
+  
+
+
+
   def index
     @homeinspectors = Homeinspector.all
   end

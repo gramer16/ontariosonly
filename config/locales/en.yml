@@ -192,6 +192,8 @@ en:
   jumbotron_framingtitle_html: <h2>Framing Services</h2>
   jumbotron_contratortitle_html: <h2>General Contractors Services</h2>
   jumbotron_hardmoneytitle_html: <h2>Hardmoney Lenders Services</h2>
+  jumbotron_homeinspectortitle_html: <h2>Home Inspectors Services</h2>
+  jumbotron_insulationtitle_html: <h2>Insulation Services</h2>
   searchservice_html: <h4><strong>Find a Service</strong></h4>
   servicecompanywebsite: Company Website
   servicecompanyphone: Company Phone

@@ -179,6 +179,8 @@ fr:
   jumbotron_framingtitle_html: <h2>Des services d'encadrement</h2>
   jumbotron_contratortitle_html: <h2>Contracteur Services</h2>
   jumbotron_hardmoneytitle_html: <h2>Les Services de l'argent de Prêteurs</h2>
+  jumbotron_homeinspectortitle_html: <h2>Services d'inspection de la Maison</h2>
+  jumbotron_insulationtitle_html: <h2>Services d'isolation</h2>
   searchservice_html: <h4><strong>Trouver un Service</strong></h4>
   servicecompanywebsite: Site de L'entreprise
   servicecompanyphone: Téléphone de la Compagnie

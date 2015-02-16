@@ -1,6 +1,15 @@
 class InsulationsController < ApplicationController
   before_action :set_insulation, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+      @insulations = Insulation.search(params[:search])
+    else
+      @insulations = Insulation.all
+    end
+  end
+
+
   def index
     @insulations = Insulation.all
   end
