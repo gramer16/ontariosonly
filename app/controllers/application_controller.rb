@@ -9,8 +9,6 @@ class ApplicationController < ActionController::Base
   def configure_permitted_parameters
     devise_parameter_sanitizer.for(:sign_up) << :name
     devise_parameter_sanitizer.for(:account_update) << :name
-    devise_parameter_sanitizer.for(:sign_up) << :role
-    devise_parameter_sanitizer.for(:account_update) << :role
     devise_parameter_sanitizer.for(:sign_up) << :isRealtor
     devise_parameter_sanitizer.for(:account_update) << :isRealtor
     devise_parameter_sanitizer.for(:sign_up) << :licenseId
