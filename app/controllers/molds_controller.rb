@@ -1,6 +1,16 @@
 class MoldsController < ApplicationController
   before_action :set_mold, only: [:show, :edit, :update, :destroy]
 
+
+  def search
+    if params[:search].present?
+      @molds = Mold.search(params[:search])
+    else
+      @molds = Mold.all
+    end
+  end
+  
+
   def index
     @molds = Mold.all
   end

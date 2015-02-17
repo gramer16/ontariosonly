@@ -1,49 +1,55 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Company name:</strong>
-  <%= @lawyer.company_name %>
-</p>
 
-<p>
-  <strong>Company description:</strong>
-  <%= @lawyer.company_description %>
-</p>
+<div class="row">
+  <div class="col-md-6">
+    <div class="thumbnail">
+       <%= image_tag @lawyer.image.url %>
+       <br> 
+      <strong><%= @lawyer.company_name %></strong>
+      <br>
+      <br>
+      <strong><%= label_tag :nil, t('servicecompanywebsite') %></strong>  
+      <%= link_to @lawyer.company_website, @lawyer.company_website %><br>
+      
+      
+      <strong><%= label_tag :nil, t('companycontactname') %></strong>  
+     <%= @lawyer.contact_name %>
+     <br>
+      <strong><%= label_tag :nil, t('companyservicephone') %></strong> 
+     <%= @lawyer.company_phone %><br>
+     <strong><%= label_tag :nil, t('servicecompanyaddress') %></strong>  
+     <%= @lawyer.address %><br>
+      <strong><%= label_tag :nil, t('city') %></strong>  
+     <%= @lawyer.city %><br>
+     <strong><%= label_tag :nil, t('zipcode') %></strong>  
+     <%= @lawyer.zipcode %><br>
+    </div>
+     <br>
 
-<p>
-  <strong>Address:</strong>
-  <%= @lawyer.address %>
-</p>
+  </div>
+  <div class="col-md-6">
+    <h5><strong><%= label_tag :nil, t('generalcompany') %></strong></h5>
+    <%= @lawyer.company_description %>
+  </div>
 
-<p>
-  <strong>City:</strong>
-  <%= @lawyer.city %>
-</p>
+</div>
 
-<p>
-  <strong>Zipcode:</strong>
-  <%= @lawyer.zipcode %>
-</p>
+  <div class ="col-md-12">
+    <div class= "center">
+   <strong><%= label_tag :nil, t('mapview') %></strong><br>
+   <br>
+<iframe
+  width="800"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAUOQ0h7ZYU56FuY9ziMMXURoIlHxC3pfY
+    &q=<%= @lawyer.address.parameterize %>">
+</iframe>
 
-<p>
-  <strong>Contact name:</strong>
-  <%= @lawyer.contact_name %>
-</p>
+</div>
+<br>
+<br>  
+ </div>
 
-<p>
-  <strong>Company website:</strong>
-  <%= @lawyer.company_website %>
-</p>
-
-<p>
-  <strong>Company phone:</strong>
-  <%= @lawyer.company_phone %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @lawyer.email %>
-</p>
-
-<%= link_to 'Edit', edit_lawyer_path(@lawyer) %> |
-<%= link_to 'Back', lawyers_path %>
+<%= link_to 'Edit', edit_lawyer_path(@lawyer), class: "btn btn-link" %> |
+<%= link_to t('back'), lawyers_path, class: "btn btn-link" %>

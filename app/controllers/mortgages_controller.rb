@@ -1,6 +1,16 @@
 class MortgagesController < ApplicationController
   before_action :set_mortgage, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+      @mortgages = Mortgage.search(params[:search])
+    else
+      @mortgages = Mortgage.all
+    end
+  end
+  
+  
+
   def index
     @mortgages = Mortgage.all
   end

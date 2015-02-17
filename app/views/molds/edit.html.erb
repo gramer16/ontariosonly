@@ -1,6 +1,11 @@
-<h1>Editing mold</h1>
+<div class="jumbotron">
+  <div class="left">
+    <%= t('jumbotron_moldtitle_html') %>
+  
+ </div>
+ </div>
 
 <%= render 'form' %>
 
 <%= link_to 'Show', @mold %> |
-<%= link_to 'Back', molds_path %>
+<%= link_to t('back'), molds_path %>

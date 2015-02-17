@@ -1,5 +1,13 @@
 class LandscapingsController < ApplicationController
   before_action :set_landscaping, only: [:show, :edit, :update, :destroy]
+  def search
+    if params[:search].present?
+      @landscapings = Landscaping.search(params[:search])
+    else
+      @landscapings = Landscaping.all
+    end
+  end
+  
 
   def index
     @landscapings = Landscaping.all

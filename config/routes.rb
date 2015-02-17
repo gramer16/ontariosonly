@@ -10,7 +10,12 @@ Rails.application.routes.draw do
   resources :subscriptions
    
 
-  resources :interiordesigners
+  resources :interiordesigners do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
   resources :countertops do
     collection do
@@ -83,13 +88,33 @@ Rails.application.routes.draw do
 
   resources :plumbings
 
-  resources :molds
+  resources :molds do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
-  resources :mortgages
+  resources :mortgages do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
-  resources :landsurveyors
+  resources :landsurveyors do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
-  resources :landscapings
+  resources :landscapings do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
   resources :insulations do
      collection do

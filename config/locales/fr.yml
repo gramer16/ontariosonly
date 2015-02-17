@@ -181,7 +181,22 @@ fr:
   jumbotron_hardmoneytitle_html: <h2>Les Services de l'argent de Prêteurs</h2>
   jumbotron_homeinspectortitle_html: <h2>Services d'inspection de la Maison</h2>
   jumbotron_insulationtitle_html: <h2>Services d'isolation</h2>
+  jumbotron_interiordesignertitle_html: <h2>Décorateur d'intérieurs</h2> 
+  jumbotron_landscapingtitle_html: <h2>Services d'aménagement Paysagers</h2>
+  jumbotron_landsurveyortitle_html: <h2>Services d'arpenteur-géomètre</h2> 
+  jumbotron_lawyertitle_html: <h2>Services d'avocat de l'immobilier</h2>
+  jumbotron_moldtitle_html: <h2>Services de Moule</h2>
+  jumbotron_mortgagetitle_html: <h2>Services de prêts Hypothécaires</h2>
   searchservice_html: <h4><strong>Trouver un Service</strong></h4>
+  jumbotron_subscriptiontitle_html: <h2>Les Entreprises Immobilières Abonné</h2>
+  companynamesubscription_html: <strong><th class="center">Nom de l'entreprise</th></strong>
+  companysitesubscription_html: <strong><th class="center">Site de la Société</th></strong>
+  addresssubscription_html: <strong><th class="center">Adresse</th></strong>
+  citysubscription_html: <strong><th class="center">Ville</th></strong>
+  zipcodesubscription_html: <strong><th class="center">Code Postal</th></strong>
+  phonesubscription_html: <strong><th class="center">Numéro de Téléphone</th></strong>
+  actionsubscription_html: <th class="center">Activité</th>
+  add_subscription: SOUSCRIRE
   servicecompanywebsite: Site de L'entreprise
   servicecompanyphone: Téléphone de la Compagnie
   servicecompanyaddress: Adresse

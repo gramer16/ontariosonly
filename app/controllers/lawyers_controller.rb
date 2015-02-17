@@ -1,6 +1,15 @@
 class LawyersController < ApplicationController
   before_action :set_lawyer, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+      @lawyers = Lawyer.search(params[:search])
+    else
+      @lawyers = Lawyer.all
+    end
+  end
+  
+
   def index
     @lawyers = Lawyer.all
     

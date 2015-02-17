@@ -1,6 +1,15 @@
 class LandsurveyorsController < ApplicationController
   before_action :set_landsurveyor, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+      @landsurveyors = Landsurveyor.search(params[:search])
+    else
+      @landsurveyors = Landsurveyor.all
+    end
+  end
+
+
   def index
     @landsurveyors = Landsurveyor.all
   end

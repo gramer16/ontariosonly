@@ -1,6 +1,16 @@
 class InteriordesignersController < ApplicationController
   before_action :set_interiordesigner, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+      @interiordesigners = Interiordesigner.search(params[:search])
+    else
+      @interiordesigners = Interiordesigner.all
+    end
+  end
+
+
+
   def index
     @interiordesigners = Interiordesigner.all
   end
