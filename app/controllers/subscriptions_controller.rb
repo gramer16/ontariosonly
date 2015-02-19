@@ -20,18 +20,29 @@ class SubscriptionsController < ApplicationController
     #@plan = Plan.find(params[:name])
     #@subscription.name = @plan.name
     if @subscription.save_with_payment
-      redirect_to  @subscription, :notice => "Thank you for subscribing!"
+      redirect_to  @subscription, :notice => "Thank you for subscribing! Our Ontario's Only Team will contact you shortly to request additional information to advertise your Business Profile on our Website"
     else
       render :new
     end
   end
 
   def update
-    @subscription.update(subscription_params)
+    respond_to do |format|
+      if @subscription.update(subscription_params)
+        format.html { redirect_to @subscription, notice: 'Subscription was successfully updated.' }
+        format.json { render :show, status: :ok, location: @subscription }
+      else
+        format.html { render :edit }
+        format.json { render json: @subscription.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   def destroy
     @subscription.destroy
+     respond_to do |format|
+      format.html { redirect_to security_url, notice: 'Subscription was successfully destroyed.' }
+      format.json { head :no_content }
   end
 
   private
