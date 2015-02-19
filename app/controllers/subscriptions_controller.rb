@@ -27,22 +27,11 @@ class SubscriptionsController < ApplicationController
   end
 
   def update
-    respond_to do |format|
-      if @subscription.update(subscription_params)
-        format.html { redirect_to @subscription, notice: 'Subscription was successfully updated.' }
-        format.json { render :show, status: :ok, location: @subscription }
-      else
-        format.html { render :edit }
-        format.json { render json: @subscription.errors, status: :unprocessable_entity }
-      end
-    end
+    @subscription.update(subscription_params)
   end
 
   def destroy
     @subscription.destroy
-     respond_to do |format|
-      format.html { redirect_to security_url, notice: 'Subscription was successfully destroyed.' }
-      format.json { head :no_content }
   end
 
   private
