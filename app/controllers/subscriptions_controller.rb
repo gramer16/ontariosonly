@@ -32,6 +32,7 @@ class SubscriptionsController < ApplicationController
 
   def destroy
     @subscription.destroy
+    redirect_to @subscription, :notice => "Subscription was successfully deleted"
   end
 
   private
