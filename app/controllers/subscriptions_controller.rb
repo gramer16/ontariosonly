@@ -28,6 +28,7 @@ class SubscriptionsController < ApplicationController
 
   def update
     @subscription.update(subscription_params)
+    redirect_to @subscription, :notice => "Subscription was successfully updated"
   end
 
   def destroy
