@@ -45,4 +45,9 @@ class SubscriptionsController < ApplicationController
     def subscription_params
       params.require(:subscription).permit(:email, :name, :description, :stripe_card_token, :company_name, :website, :address, :zipcode, :city, :phone, :contact, :company_email, :sellerid, :card_name, :bill_address)
     end
+     def check_user
+      unless current_user.admin?
+        redirect_to root_url, alert: "Sorry, this service just can be post by the Website Administrator"
+      end
+    end
 end
