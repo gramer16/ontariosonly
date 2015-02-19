@@ -1,6 +1,16 @@
 class TermiteinspectorsController < ApplicationController
   before_action :set_termiteinspector, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+       @termiteinspectors = Termiteinspector.search(params[:search])
+    else
+       @termiteinspectors = Termiteinspector.all
+    end
+  end
+
+
+
   def index
     @termiteinspectors = Termiteinspector.all
   end

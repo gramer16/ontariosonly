@@ -1,41 +1,57 @@
-<h1>Listing stagings</h1>
+<div class="jumbotron">
+  <div class="left">
+    <%= t('jumbotron_stagingtitle_html') %>
+  
+ </div>
+ </div>
+ <br>
 
-<table>
-  <thead>
-    <tr>
-      <th>Company name</th>
-      <th>Company description</th>
-      <th>Address</th>
-      <th>City</th>
-      <th>Zipcode</th>
-      <th>Contact name</th>
-      <th>Company website</th>
-      <th>Company phone</th>
-      <th>Email</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div class="left">
+  <%= t('searchservice_html') %>
+   <%= form_tag search_stagings_path, method: :get do %>
+          <p>
+        <%= text_field :search, params[:search], placeholder: t('searchtextbox'), class: "form-control" %>
+        <br>
+         <%= submit_tag t('searchbtn'), name: nil ,class: "btn btn-success" %>
+      </p>
+    </div>
+  <% end %>
 
-  <tbody>
-    <% @stagings.each do |staging| %>
-      <tr>
-        <td><%= staging.company_name %></td>
-        <td><%= staging.company_description %></td>
-        <td><%= staging.address %></td>
-        <td><%= staging.city %></td>
-        <td><%= staging.zipcode %></td>
-        <td><%= staging.contact_name %></td>
-        <td><%= staging.company_website %></td>
-        <td><%= staging.company_phone %></td>
-        <td><%= staging.email %></td>
-        <td><%= link_to 'Show', staging %></td>
-        <td><%= link_to 'Edit', edit_staging_path(staging) %></td>
-        <td><%= link_to 'Destroy', staging, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+<div class="thumbnail">
+  <div class="center"> 
+    <div class="row">
+      <% @stagings.each do |staging| %>
+      <div class="col-md-3">
+      <div class="thumbnail">
+        <%= link_to image_tag(staging.image.url), staging %>
+        <div class="caption">
+          <h4><strong><%= staging.company_name %></strong></h4>
+          <strong><th><%= label_tag :nil, t('servicecompanywebsite') %></th></strong><br>
+            <%= link_to staging.company_website, staging.company_website %><br>
+            <strong><th><%= label_tag :nil, t('servicecompanyphone') %></th></strong><br>
+            <%= staging.company_phone %><br>
+           <strong><th><%= label_tag :nil, t('servicecompanyaddress') %></th></strong><br>
+           <%= staging.address %><br> 
+           <strong><th><%= label_tag :nil, t('city') %></th></strong><%= staging.city %><br>
+           <strong><th><%= label_tag :nil, t('zipcode') %></th></strong><br><%= staging.zipcode %><br>
+           <br>
+           
+           <td><%= link_to 'Show', staging, class: "btn btn-success" %></td>
+        
+        <td><%= link_to 'Edit', edit_staging_path(staging), class: "btn btn-success" %></td>
+        <td><%= link_to 'Destroy',staging, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-success" %></td>
+        </div>
+      </div>
+    </div>
     <% end %>
-  </tbody>
-</table>
+    </div>
+
+  </div>
+</div> 
+
 
 <br>
+<br>
 
-<%= link_to 'New Staging', new_staging_path %>
+
+<%= link_to t('add_service'), new_staging_path, class: "btn btn-success" %>

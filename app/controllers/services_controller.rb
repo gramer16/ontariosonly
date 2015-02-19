@@ -3,8 +3,13 @@ class ServicesController < ApplicationController
   before_filter :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   before_filter :check_user, only: [:edit, :update, :destroy]
   
- 
-
+  def search
+    if params[:search].present?
+       @services = Service.search(params[:search])
+    else
+       @services = Service.all
+    end
+  end
 
 
   def index

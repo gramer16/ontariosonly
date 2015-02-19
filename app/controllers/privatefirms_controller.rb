@@ -1,5 +1,15 @@
 class PrivatefirmsController < ApplicationController
   before_action :set_privatefirm, only: [:show, :edit, :update, :destroy]
+  
+  def search
+    if params[:search].present?
+     @privatefirms = Privatefirm.search(params[:search])
+    else
+     @privatefirms = Privatefirm.all
+    end
+  end
+  
+
 
   def index
     @privatefirms = Privatefirm.all

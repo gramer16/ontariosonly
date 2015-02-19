@@ -1,3 +1,4 @@
+
 <div class="row">
   <div class="col-md-6">
     <div class="thumbnail">
@@ -6,28 +7,27 @@
       <strong><%= @service.company_name %></strong>
       <br>
       <br>
-      <strong>Company Website:</strong>  
+      <strong><%= label_tag :nil, t('servicecompanywebsite') %></strong>  
       <%= link_to @service.company_website, @service.company_website %><br>
-      <strong>Type of Service:</strong>
-      <%= @service.service_type %>
-      <br>
-      <strong>Company contact name:</strong>  
+      
+      
+      <strong><%= label_tag :nil, t('companycontactname') %></strong>  
      <%= @service.contact_name %>
      <br>
-      <strong>Company phone:</strong> 
+      <strong><%= label_tag :nil, t('companyservicephone') %></strong> 
      <%= @service.company_phone %><br>
-     <strong>Address:</strong>  
+     <strong><%= label_tag :nil, t('servicecompanyaddress') %></strong>  
      <%= @service.address %><br>
-      <strong>City:</strong>  
+      <strong><%= label_tag :nil, t('city') %></strong>  
      <%= @service.city %><br>
-     <strong>Zipcode:</strong>  
+     <strong><%= label_tag :nil, t('zipcode') %></strong>  
      <%= @service.zipcode %><br>
     </div>
      <br>
 
   </div>
   <div class="col-md-6">
-    <h5><strong>General Company Information:</strong></h5>
+    <h5><strong><%= label_tag :nil, t('generalcompany') %></strong></h5>
     <%= @service.company_description %>
   </div>
 
@@ -35,7 +35,7 @@
 
   <div class ="col-md-12">
     <div class= "center">
-   <strong>Map View Location:</strong><br>
+   <strong><%= label_tag :nil, t('mapview') %></strong><br>
    <br>
 <iframe
   width="800"
@@ -50,11 +50,5 @@
 <br>  
  </div>
 
-
-
-
-
-
-<% if current_user == @service.user %>
-<%= link_to 'Edit', edit_service_path(@service), class: "btn btn-link" %><% end %> |
-<%= link_to 'Back', services_path, class: "btn btn-link" %>
+<%= link_to 'Edit', edit_service_path(@service), class: "btn btn-link" %> |
+<%= link_to t('back'), services_path, class: "btn btn-link" %>

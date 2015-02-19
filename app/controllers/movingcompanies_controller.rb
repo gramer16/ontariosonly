@@ -1,6 +1,16 @@
 class MovingcompaniesController < ApplicationController
   before_action :set_movingcompany, only: [:show, :edit, :update, :destroy]
 
+  
+  def search
+    if params[:search].present?
+      @movingcompanies = Movingcompany.search(params[:search])
+    else
+      @movingcompanies = Movingcompany.all
+    end
+  end
+
+
   def index
     @movingcompanies = Movingcompany.all
   end

@@ -1,6 +1,14 @@
 class PoolrepairsController < ApplicationController
   before_action :set_poolrepair, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+      @poolrepairs = Poolrepair.search(params[:search])
+    else
+     @poolrepairs = Poolrepair.all
+    end
+  end
+  
   def index
     @poolrepairs = Poolrepair.all
   end

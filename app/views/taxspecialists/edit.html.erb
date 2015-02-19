@@ -1,6 +1,12 @@
-<h1>Editing taxspecialist</h1>
+<div class="jumbotron">
+  <div class="left">
+    <%= t('jumbotron_taxestitle_html') %>
+  
+ </div>
+ </div>
+ <br>
 
 <%= render 'form' %>
 
 <%= link_to 'Show', @taxspecialist %> |
-<%= link_to 'Back', taxspecialists_path %>
+<%= link_to t('back'), taxspecialists_path %>

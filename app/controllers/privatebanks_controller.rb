@@ -1,6 +1,14 @@
 class PrivatebanksController < ApplicationController
   before_action :set_privatebank, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+      @privatebanks = Privatebank.search(params[:search])
+    else
+     @privatebanks = Privatebank.all
+    end
+  end
+
   def index
     @privatebanks = Privatebank.all
   end

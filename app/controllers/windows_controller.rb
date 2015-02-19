@@ -1,6 +1,16 @@
 class WindowsController < ApplicationController
   before_action :set_window, only: [:show, :edit, :update, :destroy]
 
+    def search
+    if params[:search].present?
+       @windows = Window.search(params[:search])
+    else
+       @windows = Window.all
+    end
+  end
+
+
+
   def index
     @windows = Window.all
   end

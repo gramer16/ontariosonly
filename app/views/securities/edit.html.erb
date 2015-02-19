@@ -1,6 +1,12 @@
-<h1>Editing security</h1>
+<div class="jumbotron">
+  <div class="left">
+    <%= t('jumbotron_securitytitle_html') %>
+  
+ </div>
+ </div>
+ <br>
 
 <%= render 'form' %>
 
 <%= link_to 'Show', @security %> |
-<%= link_to 'Back', securities_path %>
+<%= link_to t('back'), securities_path %>

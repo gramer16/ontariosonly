@@ -1,44 +1,54 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Company name:</strong>
-  <%= @privatefirm.company_name %>
-</p>
+<div class="row">
+  <div class="col-md-6">
+    <div class="thumbnail">
+       <%= image_tag @@privatefirm.image.url %>
+       <br> 
+      <strong><%= @privatefirm.company_name %></strong>
+      <br>
+      <br>
+      <strong><%= label_tag :nil, t('servicecompanywebsite') %></strong>  
+      <%= link_to @privatefirm.company_website, @privatefirm.company_website %><br>
+      
+      
+      <strong><%= label_tag :nil, t('companycontactname') %></strong>  
+     <%= @privatefirm.contact_name %>
+     <br>
+      <strong><%= label_tag :nil, t('companyservicephone') %></strong> 
+     <%= @privatefirm.company_phone %><br>
+     <strong><%= label_tag :nil, t('servicecompanyaddress') %></strong>  
+     <%= @privatefirm.address %><br>
+      <strong><%= label_tag :nil, t('city') %></strong>  
+     <%= @privatefirm.city %><br>
+     <strong><%= label_tag :nil, t('zipcode') %></strong>  
+     <%= @privatefirm.zipcode %><br>
+    </div>
+     <br>
 
-<p>
-  <strong>Company description:</strong>
-  <%= @privatefirm.company_description %>
-</p>
+  </div>
+  <div class="col-md-6">
+    <h5><strong><%= label_tag :nil, t('generalcompany') %></strong></h5>
+    <%= @privatefirm.company_description %>
+  </div>
 
-<p>
-  <strong>Address:</strong>
-  <%= @privatefirm.address %>
-</p>
+</div>
 
-<p>
-  <strong>City:</strong>
-  <%= @privatefirm.city %>
-</p>
+  <div class ="col-md-12">
+    <div class= "center">
+   <strong><%= label_tag :nil, t('mapview') %></strong><br>
+   <br>
+<iframe
+  width="800"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAUOQ0h7ZYU56FuY9ziMMXURoIlHxC3pfY
+    &q=<%= @privatefirm.address.parameterize %>">
+</iframe>
 
-<p>
-  <strong>Zipcode:</strong>
-  <%= @privatefirm.zipcode %>
-</p>
+</div>
+<br>
+<br>  
+ </div>
 
-<p>
-  <strong>Contact name:</strong>
-  <%= @privatefirm.contact_name %>
-</p>
-
-<p>
-  <strong>Company website:</strong>
-  <%= @privatefirm.company_website %>
-</p>
-
-<p>
-  <strong>Company phone:</strong>
-  <%= @privatefirm.company_phone %>
-</p>
-
-<%= link_to 'Edit', edit_privatefirm_path(@privatefirm) %> |
-<%= link_to 'Back', privatefirms_path %>
+<%= link_to 'Edit', edit_privatefirm_path(@privatefirm), class: "btn btn-link" %> |
+<%= link_to t('back'), privatefirms_path, class: "btn btn-link" %>

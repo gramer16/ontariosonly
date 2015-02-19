@@ -1,6 +1,15 @@
 class RealEstatefirmsController < ApplicationController
   before_action :set_real_estatefirm, only: [:show, :edit, :update, :destroy]
 
+    def search
+    if params[:search].present?
+     @real_estatefirms = RealEstatefirm.search(params[:search])
+    else
+     @real_estatefirms = RealEstatefirm.all
+    end
+  end
+
+
   def index
     @real_estatefirms = RealEstatefirm.all
   end

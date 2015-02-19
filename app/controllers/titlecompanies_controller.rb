@@ -1,6 +1,16 @@
 class TitlecompaniesController < ApplicationController
   before_action :set_titlecompany, only: [:show, :edit, :update, :destroy]
 
+  
+  def search
+    if params[:search].present?
+       @titlecompanies = Titlecompany.search(params[:search])
+    else
+       @titlecompanies = Titlecompany.all
+    end
+  end
+
+
   def index
     @titlecompanies = Titlecompany.all
   end

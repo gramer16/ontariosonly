@@ -1,6 +1,13 @@
-<h1>Editing termiteinspector</h1>
+<div class="jumbotron">
+  <div class="left">
+    <%= t('jumbotron_termitetitle_html') %>
+  
+ </div>
+ </div>
+ <br>
+
 
 <%= render 'form' %>
 
 <%= link_to 'Show', @termiteinspector %> |
-<%= link_to 'Back', termiteinspectors_path %>
+<%= link_to t('back'), termiteinspectors_path %>

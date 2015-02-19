@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150216041819) do
+ActiveRecord::Schema.define(version: 20150218173149) do
 
   create_table "accountants", force: true do |t|
     t.string   "company_name"
@@ -824,6 +824,7 @@ ActiveRecord::Schema.define(version: 20150216041819) do
     t.string   "company_email"
     t.string   "card_name"
     t.text     "bill_address"
+    t.string   "sellerid"
   end
 
   create_table "taxspecialists", force: true do |t|

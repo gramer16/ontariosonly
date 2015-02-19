@@ -187,6 +187,27 @@ fr:
   jumbotron_lawyertitle_html: <h2>Services d'avocat de l'immobilier</h2>
   jumbotron_moldtitle_html: <h2>Services de Moule</h2>
   jumbotron_mortgagetitle_html: <h2>Services de prêts Hypothécaires</h2>
+  jumbotron_movingtitle_html: <h2>Services de Déménagement</h2>
+  jumbotron_paintingtitle_html: <h2>Services de Peinture</h2>
+  jumbotron_plumbingtitle_html: <h2>Services de Plomberie</h2>
+  jumbotron_poolcleanertitle_html: <h2>Services de Nettoyage de Piscine</h2>
+  jumbotron_poolrepairtitle_html: <h2>Services de Réparation Piscine</h2>
+  jumbotron_privatebanktitle_html: <h2>Les Services Bancaires</h2>
+  jumbotron_privatefirmtitle_html: <h2>Services de Sociétés Privées</h2>
+  jumbotron_propertymanagetitle_html: <h2>Entreprises de Gestion Immobilière</h2>
+  jumbotron_realestatetitle_html: <h2>Sociétés Immobilières</h2>
+  jumbotron_realtortitle_html: <h2>Les Agents Immobiliers</h2>
+  jumbotron_rentalpropertytitle_html: <h2>Services de Biens Locatifs</h2>
+  jumbotron_roofingtitle_html: <h2>Services de Toiture</h2>
+  jumbotron_securitytitle_html: <h2>Services de Sécurité</h2>
+  jumbotron_septictitle_html: <h2>Services Septiques</h2>
+  jumbotron_solarscreentitle_html: <h2>Services d'écran Solaire</h2>
+  jumbotron_stagingtitle_html: <h2>Services de Mise en Scène</h2>
+  jumbotron_taxestitle_html: <h2>Spécialiste des Taxes</h2>
+  jumbotron_termitetitle_html: <h2>Inspecteurs de Termites</h2>
+  jumbotron_titletitle_html: <h2>Les sociétés de Titre</h2>
+  jumbotron_windowtitle_html: <h2>Fenêtres</h2>
+  jumbotron_missingservicestitle_html: <h2>Services Immobiliers</h2>
   searchservice_html: <h4><strong>Trouver un Service</strong></h4>
   jumbotron_subscriptiontitle_html: <h2>Les Entreprises Immobilières Abonné</h2>
   companynamesubscription_html: <strong><th class="center">Nom de l'entreprise</th></strong>

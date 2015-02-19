@@ -1,6 +1,15 @@
 class TaxspecialistsController < ApplicationController
   before_action :set_taxspecialist, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+       @taxspecialists = Taxspecialist.search(params[:search])
+    else
+       @taxspecialists = Taxspecialist.all
+    end
+  end
+
+
   def index
     @taxspecialists = Taxspecialist.all
   end

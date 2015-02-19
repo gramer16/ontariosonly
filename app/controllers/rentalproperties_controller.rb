@@ -1,6 +1,16 @@
 class RentalpropertiesController < ApplicationController
   before_action :set_rentalproperty, only: [:show, :edit, :update, :destroy]
 
+  
+  def search
+    if params[:search].present?
+     @rentalproperties = Rentalproperty.search(params[:search])
+    else
+     @rentalproperties = Rentalproperty.all
+    end
+  end
+
+
   def index
     @rentalproperties = Rentalproperty.all
   end

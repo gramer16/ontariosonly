@@ -1,6 +1,14 @@
 class RealtorsController < ApplicationController
   before_action :set_realtor, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+     @realtors = Realtor.search(params[:search])
+    else
+     @realtors = Realtor.all
+    end
+  end
+
   def index
     @realtors = Realtor.all
   end

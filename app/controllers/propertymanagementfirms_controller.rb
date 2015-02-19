@@ -1,6 +1,15 @@
 class PropertymanagementfirmsController < ApplicationController
   before_action :set_propertymanagementfirm, only: [:show, :edit, :update, :destroy]
 
+   def search
+    if params[:search].present?
+     @propertymanagementfirms = Propertymanagementfirm.search(params[:search])
+    else
+     @propertymanagementfirms = Propertymanagementfirm.all
+    end
+  end
+  
+
   def index
     @propertymanagementfirms = Propertymanagementfirm.all
   end

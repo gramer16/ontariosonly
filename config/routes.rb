@@ -39,29 +39,95 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :movingcompanies
+  resources :movingcompanies do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
-  resources :poolrepairs
 
-  resources :poolcleaners
+  resources :poolrepairs do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
-  resources :solarscreens
+  resources :poolcleaners do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
-  resources :windows
+  resources :solarscreens do
+     collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
-  resources :termiteinspectors
 
-  resources :taxspecialists
+  resources :windows do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
-  resources :titlecompanies
 
-  resources :septics
+  resources :termiteinspectors do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
-  resources :securities
 
-  resources :stagings
+  resources :taxspecialists do
+     collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
-  resources :rentalproperties
+  resources :titlecompanies do
+     collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
+
+  resources :septics do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
+
+
+  resources :securities do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
+
+  resources :stagings do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
+
+
+  resources :rentalproperties do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
   resources :accountants do
     collection do
@@ -70,23 +136,71 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :lawyers
+  resources :lawyers do
+     collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
-  resources :real_estatefirms
 
-  resources :realtors
+  resources :real_estatefirms do 
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
-  resources :roofings
 
-  resources :privatebanks
+  resources :realtors do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
-  resources :privatefirms
+  resources :roofings do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
-  resources :propertymanagementfirms
+  resources :privatebanks do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
-  resources :paintings
+  resources :privatefirms do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
-  resources :plumbings
+  resources :propertymanagementfirms do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
+
+
+  resources :paintings do
+     collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
+
+  resources :plumbings do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
 
   resources :molds do
     collection do
@@ -185,7 +299,13 @@ Rails.application.routes.draw do
     end
   end  
 
-  resources :services
+  resources :services do
+    collection do
+      get 'search'
+      get :autocomplete
+    end
+  end
+
 
   resources :arquitects do
     collection do

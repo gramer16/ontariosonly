@@ -1,6 +1,12 @@
-<h1>Editing propertymanagementfirm</h1>
+<div class="jumbotron">
+  <div class="left">
+    <%= t('jumbotron_propertymanagetitle_html') %>
+  
+ </div>
+ </div>
+ <br>
 
 <%= render 'form' %>
 
 <%= link_to 'Show', @propertymanagementfirm %> |
-<%= link_to 'Back', propertymanagementfirms_path %>
+<%= link_to t('back'), propertymanagementfirms_path %>

@@ -1,6 +1,15 @@
 class PaintingsController < ApplicationController
   before_action :set_painting, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+      @paintings = Painting.search(params[:search])
+    else
+      @paintings = Painting.all
+    end
+  end
+
+
   def index
     @paintings = Painting.all
   end

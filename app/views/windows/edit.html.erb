@@ -1,6 +1,12 @@
-<h1>Editing window</h1>
+<div class="jumbotron">
+  <div class="left">
+    <%= t('jumbotron_windowtitle_html') %>
+  
+ </div>
+ </div>
+ <br>
 
 <%= render 'form' %>
 
 <%= link_to 'Show', @window %> |
-<%= link_to 'Back', windows_path %>
+<%= link_to t('back'), windows_path %>

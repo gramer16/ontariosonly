@@ -40,6 +40,6 @@ class SubscriptionsController < ApplicationController
     end
 
     def subscription_params
-      params.require(:subscription).permit(:email, :name, :description, :stripe_card_token, :company_name, :website, :address, :zipcode, :city, :phone, :contact, :company_email, :card_name, :bill_address)
+      params.require(:subscription).permit(:email, :name, :description, :stripe_card_token, :company_name, :website, :address, :zipcode, :city, :phone, :contact, :company_email, :card_name, :bill_address, :sellerid)
     end
 end

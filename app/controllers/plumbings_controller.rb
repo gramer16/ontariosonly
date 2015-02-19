@@ -1,6 +1,16 @@
 class PlumbingsController < ApplicationController
   before_action :set_plumbing, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+      @plumbings = Plumbing.search(params[:search])
+    else
+      @plumbings = Plumbing.all
+    end
+  end
+
+
+
   def index
     @plumbings = Plumbing.all
   end

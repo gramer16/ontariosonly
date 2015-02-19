@@ -1,6 +1,13 @@
-<h1>Editing real_estatefirm</h1>
+<div class="jumbotron">
+  <div class="left">
+    <%= t('jumbotron_realestatetitle_html') %>
+  
+ </div>
+ </div>
+ <br>
+
 
 <%= render 'form' %>
 
 <%= link_to 'Show', @real_estatefirm %> |
-<%= link_to 'Back', real_estatefirms_path %>
+<%= link_to t('back'), real_estatefirms_path %>

@@ -1,6 +1,14 @@
 class PoolcleanersController < ApplicationController
   before_action :set_poolcleaner, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+      @poolcleaners = Poolcleaner.search(params[:search])
+    else
+      @poolcleaners = Poolcleaner.all
+    end
+  end
+
   def index
     @poolcleaners = Poolcleaner.all
   end

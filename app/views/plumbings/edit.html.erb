@@ -1,6 +1,12 @@
-<h1>Editing plumbing</h1>
+<div class="jumbotron">
+  <div class="left">
+    <%= t('jumbotron_plumbingtitle_html') %>
+  
+ </div>
+ </div>
+ <br>
 
 <%= render 'form' %>
 
 <%= link_to 'Show', @plumbing %> |
-<%= link_to 'Back', plumbings_path %>
+<%= link_to t('back'), plumbings_path %>

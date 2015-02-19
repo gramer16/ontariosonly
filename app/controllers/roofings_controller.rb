@@ -1,6 +1,17 @@
 class RoofingsController < ApplicationController
   before_action :set_roofing, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+      @roofings = Roofing.search(params[:search])
+    else
+      @roofings = Roofing.all
+    end
+  end
+
+
+
+
   def index
     @roofings = Roofing.all
   end

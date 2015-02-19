@@ -1,6 +1,14 @@
 class SolarscreensController < ApplicationController
   before_action :set_solarscreen, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+      @solarscreens = Solarscreen.search(params[:search])
+    else
+      @solarscreens = Solarscreen.all
+    end
+  end
+  
   def index
     @solarscreens = Solarscreen.all
   end

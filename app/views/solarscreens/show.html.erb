@@ -1,49 +1,54 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-md-6">
+    <div class="thumbnail">
+       <%= image_tag @solarscreen.image.url %>
+       <br> 
+      <strong><%= @solarscreen.company_name %></strong>
+      <br>
+      <br>
+      <strong><%= label_tag :nil, t('servicecompanywebsite') %></strong>  
+      <%= link_to @solarscreen.company_website, @solarscreen.company_website %><br>
+      
+      
+      <strong><%= label_tag :nil, t('companycontactname') %></strong>  
+     <%= @solarscreen.contact_name %>
+     <br>
+      <strong><%= label_tag :nil, t('companyservicephone') %></strong> 
+     <%= @solarscreen.company_phone %><br>
+     <strong><%= label_tag :nil, t('servicecompanyaddress') %></strong>  
+     <%= @solarscreen.address %><br>
+      <strong><%= label_tag :nil, t('city') %></strong>  
+     <%= @solarscreen.city %><br>
+     <strong><%= label_tag :nil, t('zipcode') %></strong>  
+     <%= @solarscreen.zipcode %><br>
+    </div>
+     <br>
 
-<p>
-  <strong>Company name:</strong>
-  <%= @solarscreen.company_name %>
-</p>
+  </div>
+  <div class="col-md-6">
+    <h5><strong><%= label_tag :nil, t('generalcompany') %></strong></h5>
+    <%= @solarscreen.company_description %>
+  </div>
 
-<p>
-  <strong>Company description:</strong>
-  <%= @solarscreen.company_description %>
-</p>
+</div>
 
-<p>
-  <strong>Address:</strong>
-  <%= @solarscreen.address %>
-</p>
+  <div class ="col-md-12">
+    <div class= "center">
+   <strong><%= label_tag :nil, t('mapview') %></strong><br>
+   <br>
+<iframe
+  width="800"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAUOQ0h7ZYU56FuY9ziMMXURoIlHxC3pfY
+    &q=<%= @solarscreen.address.parameterize %>">
+</iframe>
 
-<p>
-  <strong>City:</strong>
-  <%= @solarscreen.city %>
-</p>
+</div>
+<br>
+<br>  
+ </div>
 
-<p>
-  <strong>Zipcode:</strong>
-  <%= @solarscreen.zipcode %>
-</p>
+<%= link_to 'Edit', edit_solarscreen_path(@solarscreen), class: "btn btn-link" %> |
+<%= link_to t('back'), solarscreens_path, class: "btn btn-link" %>
 
-<p>
-  <strong>Contact name:</strong>
-  <%= @solarscreen.contact_name %>
-</p>
-
-<p>
-  <strong>Company website:</strong>
-  <%= @solarscreen.company_website %>
-</p>
-
-<p>
-  <strong>Company phone:</strong>
-  <%= @solarscreen.company_phone %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @solarscreen.email %>
-</p>
-
-<%= link_to 'Edit', edit_solarscreen_path(@solarscreen) %> |
-<%= link_to 'Back', solarscreens_path %>

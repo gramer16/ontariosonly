@@ -1,6 +1,12 @@
-<h1>Editing solarscreen</h1>
+<div class="jumbotron">
+  <div class="left">
+    <%= t('jumbotron_solarscreentitle_html') %>
+  
+ </div>
+ </div>
+ <br>
 
 <%= render 'form' %>
 
 <%= link_to 'Show', @solarscreen %> |
-<%= link_to 'Back', solarscreens_path %>
+<%= link_to t('back'), solarscreens_path %>

@@ -1,6 +1,15 @@
 class SepticsController < ApplicationController
   before_action :set_septic, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+      @septics = Septic.search(params[:search])
+    else
+      @septics = Septic.all
+    end
+  end
+
+
   def index
     @septics = Septic.all
   end

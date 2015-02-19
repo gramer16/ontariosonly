@@ -72,10 +72,20 @@
   </div>
     <br>
     
-<div class="left">
-    <%= label_tag :nil, t('plan') %><br>
-    <%= f.select :name, options_for_select([["Basic Advertising Plan $49.99","Basic"],["Gold Advertising Plan $99.99", "Gold"], ["Discount Gold Advertising Plan $59.99", "GoldDiscount"]]), class: "form-control" %>
+<div class="form-group">
+      <div class="left">
+    <div class="row">
+      <div class="col-md-4">
+    <%= f.label :name, "PLEASE SELECT A PLAN" %><br>
+    <%= f.select :name, options_for_select([["Basic Advertising Plan $49.99","Basic"],["Gold Advertising Plan $99.99", "Gold"], ["Discount Gold Advertising Plan $59.99", "GoldDiscount"]]), class: "form-control" %><br>
+    </div>
+     <div class="col-md-4">
+      <%= label_tag :nil, "Ontario's Only Seller ID" %><br>
+        <%= f.text_field :sellerid, class: "form-control" %>
+      </div>
   </div>
+</div>
+</div>
   <br>
   <br>
   <%= f.hidden_field :stripe_card_token %>

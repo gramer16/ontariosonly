@@ -1,6 +1,15 @@
 class SecuritiesController < ApplicationController
   before_action :set_security, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+      @securities = Security.search(params[:search])
+    else
+      @securities = Security.all
+    end
+  end
+
+
   def index
     @securities = Security.all
   end
