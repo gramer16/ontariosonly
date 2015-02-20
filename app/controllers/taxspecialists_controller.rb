@@ -1,7 +1,5 @@
 class TaxspecialistsController < ApplicationController
   before_action :set_taxspecialist, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:index, :show]
-  before_action :check_user, except: [:index, :show]
   def search
     if params[:search].present?
        @taxspecialists = Taxspecialist.search(params[:search])
@@ -72,9 +70,4 @@ end
         redirect_to root_url, alert: "Sorry, this listing belongs to someone else"
       end
   end
-  def check_user
-      unless current_user.admin?
-        redirect_to root_url, alert: "Sorry, this service just can be post by the Website Administrator"
-      end
-    end
 end

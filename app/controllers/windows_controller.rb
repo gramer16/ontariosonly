@@ -1,8 +1,7 @@
 class WindowsController < ApplicationController
   before_action :set_window, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:index, :show]
-  before_action :check_user, except: [:index, :show]
-    def search
+  
+  def search
     if params[:search].present?
        @windows = Window.search(params[:search])
     else
@@ -70,10 +69,5 @@ class WindowsController < ApplicationController
 
     def window_params
       params.require(:window).permit(:company_name, :company_description, :address, :city, :zipcode, :contact_name, :company_website, :company_phone, :email, :image)
-    end
-    def check_user
-      unless current_user.admin?
-        redirect_to root_url, alert: "Sorry, this service just can be post by the Website Administrator"
-      end
     end
 end

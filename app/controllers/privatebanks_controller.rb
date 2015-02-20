@@ -1,7 +1,5 @@
 class PrivatebanksController < ApplicationController
   before_action :set_privatebank, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:index, :show]
-  before_action :check_user, except: [:index, :show]
   def search
     if params[:search].present?
       @privatebanks = Privatebank.search(params[:search])
@@ -65,10 +63,5 @@ end
 
     def privatebank_params
       params.require(:privatebank).permit(:company_name, :company_description, :address, :city, :zipcode, :contact_name, :company_website, :company_phone, :image)
-    end
-    def check_user
-      unless current_user.admin?
-        redirect_to root_url, alert: "Sorry, this service just can be post by the Website Administrator"
-      end
     end
 end

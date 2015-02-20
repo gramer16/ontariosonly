@@ -1,7 +1,5 @@
 class GeneralcontractorsController < ApplicationController
   before_action :set_generalcontractor, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:index, :show]
-  before_action :check_user, except: [:index, :show]
    def search
     if params[:search].present?
       @generalcontractors = Generalcontractor.search(params[:search])

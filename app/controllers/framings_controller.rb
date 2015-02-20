@@ -1,7 +1,5 @@
 class FramingsController < ApplicationController
   before_action :set_framing, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:index, :show]
-  before_action :check_user, except: [:index, :show]
 
   def search
     if params[:search].present?
@@ -68,9 +66,5 @@ end
     def framing_params
       params.require(:framing).permit(:company_name, :company_description, :address, :city, :zipcode, :contact_name, :company_website, :company_phone, :image)
     end
-    def check_user
-      unless current_user.admin?
-        redirect_to root_url, alert: "Sorry, this service just can be post by the Website Administrator"
-      end
-    end
+    
 end
