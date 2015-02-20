@@ -51,5 +51,6 @@
 
 <br>
 <br>
-
+<% if user_signed_in? && current_user.admin? %>
 <%= link_to t('add_service'), new_flooring_path, class: "btn btn-success" %>
+<% end %>

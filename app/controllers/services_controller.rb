@@ -1,7 +1,7 @@
 class ServicesController < ApplicationController
   before_action :set_service, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
-  before_filter :check_user, only: [:edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :check_user, except: [:index, :show]
   
   def search
     if params[:search].present?
@@ -78,8 +78,8 @@ class ServicesController < ApplicationController
     end
 
     def check_user
-      if current_user != @service.user
-        redirect_to root_url, alert: "Sorry, this service belongs to someone else"
+      unless current_user.admin?
+        redirect_to root_url, alert: "Sorry, this service just can be post by the Website Administrator"
       end
     end
 end

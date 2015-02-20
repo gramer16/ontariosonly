@@ -221,6 +221,7 @@ en:
   jumbotron_titletitle_html: <h2>Title Companies Services</h2>
   jumbotron_windowtitle_html: <h2>Windows Services</h2>
   jumbotron_missingservicestitle_html: <h2>Real Estate Services</h2>
+  jumbotron_asphalttitle_html: <h2>Asphalt Services</h2>
   searchservice_html: <h4><strong>Find a Service</strong></h4>
   jumbotron_subscriptiontitle_html: <h2>Real Estate Businesses Subscribed</h2>
   companynamesubscription_html: <strong><th class="center">Company Name</th></strong>

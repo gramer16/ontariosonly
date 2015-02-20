@@ -1,5 +1,7 @@
 class CashbuyersController < ApplicationController
   before_action :set_cashbuyer, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :check_user, except: [:index, :show]
 def search
     if params[:search].present?
      @cashbuyers = Cashbuyer.search(params[:search])
@@ -71,9 +73,9 @@ end
     def cashbuyer_params
       params.require(:cashbuyer).permit(:company_name, :company_description, :address, :city, :zipcode, :contact_name, :company_website, :company_phone, :email)
     end
-    def check_user
-      if current_user != @residential.user
-        redirect_to root_url, alert: "Sorry, this listing belongs to someone else"
+     def check_user
+      unless current_user.admin?
+        redirect_to root_url, alert: "Sorry, this service just can be post by the Website Administrator"
       end
     end
   end

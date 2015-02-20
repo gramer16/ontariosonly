@@ -46,7 +46,7 @@
 
   </div>
 </div>  
-
+<% if user_signed_in? && current_user.admin? %>
 <%= link_to t('add_service'), new_drywall_path, class: "btn btn-success" %>
-
+<% end %>
 
