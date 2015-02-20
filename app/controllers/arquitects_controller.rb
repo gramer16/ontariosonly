@@ -2,7 +2,7 @@ class ArquitectsController < ApplicationController
   before_action :set_arquitect, only: [:show, :edit, :update, :destroy]
 
  
-   def search
+  def search
     if params[:search].present?
       @arquitects = Arquitect.search(params[:search])
     else
