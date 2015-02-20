@@ -1,6 +1,5 @@
 class ArquitectsController < ApplicationController
   before_action :set_arquitect, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
   before_action :check_user, only: [:destroy, :edit]
  
   def search
