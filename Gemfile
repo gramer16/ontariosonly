@@ -17,7 +17,7 @@ gem "paperclip", "~> 4.2"
 gem "paperclip-dropbox", ">= 1.1.7"
 gem "figaro"
 gem 'ransack', '~> 1.4.1'
-gem 'searchkick'
+gem 'searchkick', '~> 0.8.7'
 gem 'activesupport', '~> 4.1.7'
 gem 'rack', '~> 1.5.2'
 gem 'railties', '~> 4.1.7'
