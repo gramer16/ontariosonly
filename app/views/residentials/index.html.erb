@@ -56,11 +56,11 @@
               <br>
               <br>
               <br>
+              <div class= "left">
               <div class= "row">
               <div class= "col-md-2">
                 <div class= "form-group">
                   <%= label_tag :bedrooms, t('bedrooms') %><br>
-                  <br>
                   <%= text_field_tag :bedrooms, params[:bedrooms], class: "form-control" %>
               </div>
             </div>
@@ -76,9 +76,7 @@
                     <%= text_field_tag :half_bathrooms, params[:half_bathrooms], class: "form-control" %>
               </div>
             </div>
-          </div>
-          <div class= "row">
-              <div class= "col-md-2">
+            <div class= "col-md-2">
                 <div class= "form-group">
                   <%= label_tag :Min_square_feet, t('minsqft') %><br>
                   <%= text_field_tag :min_square_feet, params[:min_square_feet], class: "form-control" %>
@@ -90,10 +88,13 @@
                   <%= text_field_tag :max_square_feet, params[:max_square_feet], class: "form-control" %>
               </div>
               </div>
+          </div>
+        </div>
+        <div class= "left">
+          <div class= "row">
               <div class= "col-md-2">
                 <div class= "form-group">
                   <%= label_tag :Min_price, t('minprice') %><br>
-                  <br>
                   <%= text_field_tag :min_price, params[:min_price], class: "form-control" %>
               </div>
             </div>
@@ -103,6 +104,7 @@
                   <%= text_field_tag :max_price, params[:max_price], class: "form-control" %>
               </div>
             </div>
+          </div>
           </div>
             </div>
           </div>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150223151505) do
+ActiveRecord::Schema.define(version: 20150223223947) do
 
   create_table "accountants", force: true do |t|
     t.string   "company_name"
@@ -819,7 +819,7 @@ ActiveRecord::Schema.define(version: 20150223151505) do
     t.text     "address"
     t.integer  "zipcode"
     t.string   "city"
-    t.integer  "phone"
+    t.string   "phone"
     t.string   "contact"
     t.string   "company_email"
     t.string   "card_name"
@@ -829,6 +829,7 @@ ActiveRecord::Schema.define(version: 20150223151505) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+    t.text     "description"
   end
 
   create_table "taxspecialists", force: true do |t|

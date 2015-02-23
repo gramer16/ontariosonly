@@ -114,7 +114,7 @@ en:
   theater_html: <h3 class="panel-title">HOME THEATERS</h3>
   insulation_html:  <h3 class="panel-title">INSULATION</h3>
   interior_html: <h3 class="panel-title">INTERIOR DESIGNERS</h3>
-  wood_html: <h3 class="panel-title">WOOD / VINYL / ALUMINUM</h3>
+  wood_html: <h3 class="panel-title">ALUMINUM / WOOD / VINYL</h3>
   light_html: <h3 class="panel-title">LIGHTING FIXTURES / FANS</h3>
   landscaping_html: <h3 class="panel-title">LANDSCAPING</h3>
   landsurveyors_html: <h3 class="panel-title">LAND SURVEYORS</h3>
@@ -148,13 +148,14 @@ en:
   windows_html: <h3 class="panel-title">WINDOWS MANUFACTURERS AND INSTALLERS</h3>
   weather_html: <h3 class="panel-title">WEATHER PROOFING / WINTERIZING</h3>
   appliance_html: <h3 class="panel-title">APPLIANCE SALES</h3>
+  appliancerepair_html: <h3 class="panel-title">APPLIANCE REPAIRS</h3>
   adtitle_html:  <font color="cf142b"><h2 style="font-family:Calibri"><strong>Choose Your Advertising Plan Or List a Property For Rent/Sale And Maximize The Customers For Your Business!</strong></h2></font>
         <p class="lead"></p>
   adsubtitle_html:   <font color="858585"><h6 style="font-family:Calibri"><strong>*To cancel your subscription please contact us to our customer support email or our customer support phone.</strong></h6></font>
         <p class="lead"></p>
-  psubtitle_html:  <font color="272727"><h3 style="font-family:Calibri"><strong>*Ask for our Platinum and Diamond Packages</strong></h3></font>
+  psubtitle_html:  <font color="007135"><h3 style="font-family:Calibri"><strong>***Ask for our Platinum and Diamond Packages***</strong></h3></font>
         <p class="lead"></p>
-  wsubtitle_html: <font color="bf0a30"><h4 style="font-family:Calibri"><strong>*Ask about our Website Development Service for your business by D&G Global to link your business with Ontario's Only to maximize your clients.</strong></h4></font>
+  wsubtitle_html: <font color="bf0a30"><h4 style="font-family:Calibri"><strong>**Ask about our Website Development Service for your business by D&G Global to link your business with Ontario's Only to maximize your clients.**</strong></h4></font>
         <p class="lead"></p>
   contact_html: <h4 style="font-family:Calibri"><strong>Contact Us:</strong></h4>
   about_html: <h4 style="font-family:Calibri"> <strong> About Us:</strong></h4><h6>Ontario's Only is an online marketing company that offers proffessional advertising service to all real estate professionals in the province of Ontario Canada.</h6>
@@ -169,6 +170,7 @@ en:
   businessphone: Business Phone
   contactname: Contact Name
   businessemail: Company Email
+  description: Business Profile
   plan: PLEASE SELECT AN ADVERTISING PLAN
   paymentinfo: PAYMENT INFORMATION
   name: Full Name
@@ -181,7 +183,7 @@ en:
   ourcompany_html:  <h2 style="font-family:Arial"><strong>OUR COMPANY</strong></h2>
   bodycompany_html: <h4><strong>Ontario's Only</strong> is an online marketing company that offers proffessional advertising service to all real estate professionals in the province of Canada.<br><br><strong>Ontario's Only</strong> is part of <link><a href="http://www.dngglobal.ca" target="_blank"><strong>D&G Global</strong></a></link> marketing software strategies that maximizes clients exposure and customers databases. <br><br><link><a href="http://www.dngglobal.ca" target="_blank"><strong>D&G Global</strong></a></link> is a software development consulting company that offers customized techology services such as website development services, marketing strategies, global exposure through <strong>Ontario's Only</strong><br></h4>
   subbodycompany_html: <h4><strong>HOW TO CONTACT US</strong></h4>
-  morecompany_html: <h4>If you would like to contact us with any inquiries or comments please send an email to <strong>customers@ontariosonly.ca</strong> or call to <strong>1-844-ONT-ONLY</strong> <br></p></h4>
+  morecompany_html: <h4>If you would like to contact us with any inquiries or comments please send an email to <strong>customers@dngglobal.ca</strong> or call to <strong>1-844-DG-GLOBE</strong> <br></p></h4>
   jumbotron_flooringstitle_html: <h2>Flooring Services</h2>
   jumbotron_drywalltitle_html: <h2>Drywall Services</h2>
   jumbotron_cabinetstitle_html: <h2>Cabinets Services</h2>

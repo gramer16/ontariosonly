@@ -132,7 +132,8 @@ fr:
   titlecompany_html: <h3 class="panel-title">LES SOCIÉTÉS DE TITRE</h3>
   windows_html: <h3 class="panel-title">FABRICANTS WINDOWS ET INSTALLATEURS</h3>
   weather_html: <h3 class="panel-title">CONDITIONS MÉTÉOS / HIVERNAGE</h3>
-  appliance_html: <h3 class="panel-title">APPLIANCE SALES</h3>
+  appliance_html: <h3 class="panel-title">LES VENTES D'APPAREILS</h3>
+  appliancerepair_html: <h3 class="panel-title">RÉPARATION D'APPAREILS</h3>
   searchresidential_html: <h4><strong>Trouver l'immobilier Résidentiel</strong></h4>
   searchcommercial_html: <h4><strong>Trouver l'immobilier Commerciale</strong></h4>
   adtitle_html: <font color="cf142b"><h2 style="font-family:Calibri"><strong>Choisissez votre plan de publicité Ou Proposer un hébergement en Location/Vente Et maximiser les clients pour votre entreprise!</strong></h2></font>
@@ -154,6 +155,7 @@ fr:
   zipcode: Code postal
   city: Ville
   businessphone: Entreprise Téléphone
+  description: Profil d'entreprise
   contactname: Nom du Contact
   businessemail: Email de compagnie
   plan: SE IL VOUS PLAîT SéLECTIONNEZ UN PLAN DE PUBLICITé
