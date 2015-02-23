@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_filter :configure_permitted_parameters, if: :devise_controller?
   before_action :set_locale
+  
   protected
 
   def configure_permitted_parameters
@@ -15,9 +16,9 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:account_update) << :licenseId
   end
 
-  def set_locale
+def set_locale
     I18n.locale = params[:locale] || I18n.default_locale
-  end
+end
 
   # app/controllers/application_controller.rb
 def default_url_options(options = {})
