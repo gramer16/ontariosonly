@@ -9,8 +9,6 @@ class HomeinspectorsController < ApplicationController
   end
   
 
-
-
   def index
     @homeinspectors = Homeinspector.all
   end

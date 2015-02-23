@@ -9,9 +9,6 @@ class RoofingsController < ApplicationController
     end
   end
 
-
-
-
   def index
     @roofings = Roofing.all
   end

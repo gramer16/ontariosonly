@@ -9,6 +9,7 @@
 
 <table class="table table-striped table-bordered">
   <tr>
+    <%= t('image_html') %>
     <%= t('companynamesubscription_html') %>
     <%= t('companysitesubscription_html') %>
     <%= t('addresssubscription_html') %>
@@ -20,6 +21,7 @@
 
   <% @subscriptions.each do |subscription| %>
     <tr>
+      <%= link_to image_tag(subscription.image.url), subscription %>
       <strong><td><%= subscription.company_name %></td></strong>
       <td><%= link_to subscription.website, subscription.website %></td>
       <td><%= subscription.address %></td>

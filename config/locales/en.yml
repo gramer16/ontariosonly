@@ -232,6 +232,7 @@ en:
   zipcodesubscription_html: <strong><th class="center">Zipcode</th></strong>
   phonesubscription_html: <strong><th class="center">Phone Number</th></strong>
   actionsubscription_html: <th class="center">Action</th>
+  image_html: <th class="center">Image</th>
   add_subscription: SUBSCRIBE
   servicecompanywebsite: Company Website
   servicecompanyphone: Company Phone

@@ -219,6 +219,7 @@ fr:
   zipcodesubscription_html: <strong><th class="center">Code Postal</th></strong>
   phonesubscription_html: <strong><th class="center">Numéro de Téléphone</th></strong>
   actionsubscription_html: <th class="center">Activité</th>
+  image_html: <th class="center">Image</th>
   add_subscription: SOUSCRIRE
   servicecompanywebsite: Site de L'entreprise
   servicecompanyphone: Téléphone de la Compagnie
