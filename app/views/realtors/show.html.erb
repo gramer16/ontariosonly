@@ -48,7 +48,8 @@
 <br>
 <br>  
  </div>
-
-<%= link_to 'Edit', edit_realtor_path(@realtor), class: "btn btn-link" %> |
+<% if user_signed_in? && current_user.admin? %>
+<%= link_to 'Edit', edit_realtor_path(@realtor), class: "btn btn-link" %>
+<% end %> |
 <%= link_to t('back'), realtors_path, class: "btn btn-link" %>
 
