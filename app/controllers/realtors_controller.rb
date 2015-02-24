@@ -1,5 +1,6 @@
 class RealtorsController < ApplicationController
   before_action :set_realtor, only: [:show, :edit, :update, :destroy]
+  before_action :check_user, only: [:destroy, :edit]
   def search
     if params[:search].present?
      @realtors = Realtor.search(params[:search])
@@ -24,7 +25,6 @@ class RealtorsController < ApplicationController
 
   def create
      @realtor = Realtor.new(realtor_params)
-     @realtor.user_id = current_user.id
     respond_to do |format|
       if @realtor.save
         format.html { redirect_to @realtor, notice: 'Service was successfully created.' }
@@ -64,4 +64,9 @@ end
     def realtor_params
       params.require(:realtor).permit(:company_name, :company_description, :address, :city, :zipcode, :contact_name, :company_website, :company_phone, :image)
     end
+    def check_user
+        unless current_user.admin?
+         redirect_to root_url, alert: "Sorry, Only Ontario's Only Admin can Delete a Subscription"
+    end
+  end
 end
