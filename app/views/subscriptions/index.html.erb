@@ -21,7 +21,7 @@
 
   <% @subscriptions.each do |subscription| %>
     <tr>
-      <%= link_to image_tag(subscription.image.url), subscription %>
+      <td><%= image_tag subscription.image.url(:medium) %></td>
       <strong><td><%= subscription.company_name %></td></strong>
       <td><%= link_to subscription.website, subscription.website %></td>
       <td><%= subscription.address %></td>
