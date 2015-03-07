@@ -56,8 +56,9 @@
 
 
 
-
-<%= link_to 'Edit', edit_arquitect_path(@arquitect), class: "btn btn-link" %> |
+ <% if user_signed_in? && current_user.admin? %>
+<%= link_to 'Edit', edit_arquitect_path(@arquitect), class: "btn btn-link" %>
+ <% end %> |
 <%= link_to t('back'), arquitects_path, class: "btn btn-link" %>
 
 
