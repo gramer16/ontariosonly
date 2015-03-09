@@ -279,12 +279,16 @@ Rails.application.routes.draw do
       get :autocomplete
     end
   end
+
+
   resources :orders
   
   devise_for :users
   resources :subscriptionpackages do
     resources :orders
   end
+
+
   resources :asphalts do
     collection do
       get 'search'
@@ -295,7 +299,7 @@ Rails.application.routes.draw do
   resources :airconditioners do
     collection do
       get 'search'
-    get :autocomplete
+      get :autocomplete
     end
   end  
 
@@ -316,9 +320,6 @@ Rails.application.routes.draw do
 
   
 
-  
-
- 
   resources :commercialpropertiesforsales do
     collection do
       get 'search'
