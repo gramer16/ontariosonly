@@ -1,11 +1,11 @@
 class ChangeZipcodeTypeInServices < ActiveRecord::Migration
   def change
   	def self.up
-    change_column :arquitects, :zipcode, :string
+    change_column :services, :zipcode, :string
   end
  
   def self.down
-    change_column :arquitects, :zipcode, :integer
+    change_column :services, :zipcode, :integer
   end
   end
 end
