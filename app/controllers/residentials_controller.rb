@@ -24,7 +24,6 @@ class ResidentialsController < ApplicationController
   end
   
   def index
-    @residentials = Residential.all
     @residentials = @residentials.where(bedrooms: params["bedrooms"]) if params["bedrooms"].present?
     @residentials = @residentials.where(full_bathrooms: params["full_bathrooms"]) if params["full_bathrooms"].present?
     @residentials = @residentials.where(half_bathrooms: params["half_bathrooms"]) if params["half_bathrooms"].present?
@@ -39,6 +38,7 @@ class ResidentialsController < ApplicationController
     @residentials = @residentials.where("price < ?" , params["max_price"]) if params["max_price"].present?
     @residentials = @residentials.where("square_feet > ?" , params["min_square_feet"]) if params["min_square_feet"].present?
     @residentials = @residentials.where("square_feet < ?" , params["max_square_feet"]) if params["max_square_feet"].present?
+    @residentials = Residential.all
   end
   #def index
   #@search = Residential.search(params[:q])
