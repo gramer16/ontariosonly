@@ -24,21 +24,8 @@ class ResidentialsController < ApplicationController
   end
   
   def index
-    @residentials = @residentials.where(bedrooms: params["bedrooms"]) if params["bedrooms"].present?
-    @residentials = @residentials.where(full_bathrooms: params["full_bathrooms"]) if params["full_bathrooms"].present?
-    @residentials = @residentials.where(half_bathrooms: params["half_bathrooms"]) if params["half_bathrooms"].present?
-    @residentials = @residentials.where(action: params["action"]) if params["action"].present?
-    @residentials = @residentials.where(property_type: params["property_type"]) if params["property_type"].present?
-    @residentials = @residentials.where(status: params["status"]) if params["status"].present?
-    @residentials = @residentials.where(construction_type: params["construction_type"]) if params["construction_type"].present?
-    @residentials = @residentials.where(florida_mlsarea: params["florida_mlsarea"]) if params["florida_mlsarea"].present?
-    @residentials = @residentials.where(foreclosure: params["foreclosure"]) if params["foreclosure"].present?
-    @residentials = @residentials.where(square_feet: params["square_feet"]) if params["square_feet"].present?
-    @residentials = @residentials.where("price > ?" , params["min_price"]) if params["min_price"].present?
-    @residentials = @residentials.where("price < ?" , params["max_price"]) if params["max_price"].present?
-    @residentials = @residentials.where("square_feet > ?" , params["min_square_feet"]) if params["min_square_feet"].present?
-    @residentials = @residentials.where("square_feet < ?" , params["max_square_feet"]) if params["max_square_feet"].present?
     @residentials = Residential.all
+    
   end
   #def index
   #@search = Residential.search(params[:q])
