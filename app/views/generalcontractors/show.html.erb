@@ -50,6 +50,7 @@
 <br>  
  </div>
 
-<%= link_to 'Edit', edit_generalcontractor_path(@generalcontractor), class: "btn btn-link" %> |
+ <% if user_signed_in? && current_user.admin? %>
+<%= link_to 'Edit', edit_generalcontractor_path(@generalcontractor), class: "btn btn-link" %> <% end %>  |
 <%= link_to t('back'), generalcontractors_path, class: "btn btn-link" %>
 
