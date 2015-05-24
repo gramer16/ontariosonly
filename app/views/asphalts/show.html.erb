@@ -8,9 +8,7 @@
       <br>
       <br>
       <strong><%= label_tag :nil, t('servicecompanywebsite') %></strong>  
-      <%= link_to @asphalt.company_website, @asphalt.company_website %><br>
-      
-      
+      <%= link_to @asphalt.company_website, @asphalt.company_website, :target => "_blank" %><br>
       <strong><%= label_tag :nil, t('companycontactname') %></strong>  
      <%= @asphalt.contact_name %>
      <br>
