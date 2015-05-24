@@ -141,7 +141,7 @@
             <th><%= label_tag :Status, t('status') %></th> <%= residential.status %><br>
 
           </p>
-          <%= link_to 'Show', residential, class: "btn btn-warning" %>
+          <%= link_to 'Show', residential, class: "btn btn-success" %>
           <% if (user_signed_in?) && (current_user == residential.user) %>
           <%= link_to 'Edit', edit_residential_path(residential), class: "btn btn-warning" %>
           <%= link_to 'Delete', residential, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-warning" %>
