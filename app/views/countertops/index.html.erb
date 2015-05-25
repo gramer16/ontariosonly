@@ -36,9 +36,10 @@
            <br>
            
            <td><%= link_to 'Show', countertop, class: "btn btn-success" %></td>
-        
+        <% if user_signed_in? && current_user.admin? %>
         <td><%= link_to 'Edit', edit_countertop_path(countertop), class: "btn btn-success" %></td>
         <td><%= link_to 'Destroy', countertop, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-success" %></td>
+        <% end %>
         </div>
       </div>
     </div>
