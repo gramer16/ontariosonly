@@ -26,7 +26,7 @@
         <div class="caption">
           <h4><strong><%= interiordesigner.company_name %></strong></h4>
           <strong><th><%= label_tag :nil, t('servicecompanywebsite') %></th></strong><br>
-            <%= link_to interiordesigner.company_website, interiordesigner.company_website %><br>
+            <%= link_to interiordesigner.company_website, interiordesigner.company_website, :target => "_blank" %><br>
             <strong><th><%= label_tag :nil, t('servicecompanyphone') %></th></strong><br>
             <%= interiordesigner.company_phone %><br>
            <strong><th><%= label_tag :nil, t('servicecompanyaddress') %></th></strong><br>
@@ -36,9 +36,10 @@
            <br>
            
            <td><%= link_to 'Show', interiordesigner, class: "btn btn-success" %></td>
-        
+         <% if user_signed_in? && current_user.admin? %>
         <td><%= link_to 'Edit', edit_interiordesigner_path(interiordesigner), class: "btn btn-success" %></td>
         <td><%= link_to 'Destroy', interiordesigner, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-success" %></td>
+        <% end %>
         </div>
       </div>
     </div>

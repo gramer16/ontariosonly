@@ -1,5 +1,6 @@
 class InteriordesignersController < ApplicationController
   before_action :set_interiordesigner, only: [:show, :edit, :update, :destroy]
+   before_action :check_user, only: [:destroy, :edit]
   def search
     if params[:search].present?
       @interiordesigners = Interiordesigner.search(params[:search])
@@ -66,4 +67,9 @@ end
     def interiordesigner_params
       params.require(:interiordesigner).permit(:company_name, :company_description, :address, :city, :zipcode, :contact_name, :company_website, :company_phone, :email, :image)
     end
+    def check_user
+        unless current_user.admin?
+         redirect_to root_url, alert: "Sorry, Only Ontario's Only Admin can Delete a Subscription"
+    end
+  end
 end
