@@ -27,7 +27,6 @@ class InteriordesignersController < ApplicationController
 
   def create
     @interiordesigner = Interiordesigner.new(interiordesigner_params)
-    @interiordesigner.user_id = current_user.id
     respond_to do |format|
       if @interiordesigner.save
         format.html { redirect_to @interiordesigner, notice: 'Service was successfully created.' }
