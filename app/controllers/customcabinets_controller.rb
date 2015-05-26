@@ -1,6 +1,6 @@
 class CustomcabinetsController < ApplicationController
   before_action :set_customcabinet, only: [:show, :edit, :update, :destroy]
-  
+  before_action :check_user, only: [:destroy, :edit]
   def search
     if params[:search].present?
      @customcabinets = Customcabinet.search(params[:search])
@@ -71,5 +71,10 @@ end
     def customcabinet_params
       params.require(:customcabinet).permit(:company_name, :company_description, :address, :city, :zipcode, :contact_name, :company_website, :company_phone, :email, :image)
     end
+    def check_user
+        unless current_user.admin?
+         redirect_to root_url, alert: "Sorry, Only Ontario's Only Admin can Delete a Subscription"
+    end
+  end
     
 end
