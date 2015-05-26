@@ -17,11 +17,12 @@
   <% end %>
 
 
-<div class="thumbnail style="width:100%; height:auto;"">
+<div class="thumbnail">
   <div class="center"> 
     <div class="row">
      <% @landscapings.each do |landscaping| %>
       <div class="col-md-3">
+         <div class="thumbnail" style="width:100%; height:auto;">
         <%= link_to image_tag(landscaping.image.url), landscaping %>
         <div class="caption">
           <h4><strong><%= landscaping.company_name %></strong></h4>
@@ -45,6 +46,7 @@
     </div>
     <% end %>
     </div>
+</div>
 </div>
 
 
