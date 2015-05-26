@@ -1,6 +1,6 @@
 class FramingsController < ApplicationController
   before_action :set_framing, only: [:show, :edit, :update, :destroy]
-
+  before_action :check_user, only: [:destroy, :edit]
   def search
     if params[:search].present?
       @framings = Framing.search(params[:search])
