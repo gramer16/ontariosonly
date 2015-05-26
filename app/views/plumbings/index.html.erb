@@ -27,7 +27,7 @@
         <div class="caption">
           <h4><strong><%= plumbing.company_name %></strong></h4>
           <strong><th><%= label_tag :nil, t('servicecompanywebsite') %></th></strong><br>
-            <%= link_to plumbing.company_website, plumbing.company_website %><br>
+            <%= link_to plumbing.company_website, plumbing.company_website, :target => "_blank" %><br>
             <strong><th><%= label_tag :nil, t('servicecompanyphone') %></th></strong><br>
             <%= plumbing.company_phone %><br>
            <strong><th><%= label_tag :nil, t('servicecompanyaddress') %></th></strong><br>
@@ -37,9 +37,10 @@
            <br>
            
            <td><%= link_to 'Show', plumbing, class: "btn btn-success" %></td>
-        
+         <% if user_signed_in? && current_user.admin? %>
         <td><%= link_to 'Edit', edit_plumbing_path(plumbing), class: "btn btn-success" %></td>
         <td><%= link_to 'Destroy', plumbing, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-success" %></td>
+        <% end %>
         </div>
       </div>
     </div>
