@@ -31,7 +31,6 @@ class CustomcabinetsController < ApplicationController
   def create
 
     @customcabinet = Customcabinet.new(customcabinet_params)
-    @customcabinet.user_id = current_user.id
     respond_to do |format|
       if  @flooring.save
         format.html { redirect_to  @customcabinet, notice: 'Service was successfully created.' }
