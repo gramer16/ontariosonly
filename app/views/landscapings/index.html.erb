@@ -24,7 +24,6 @@
       <div class="col-md-3">
          <div class="thumbnail">
         <%= link_to image_tag(landscaping.image.url, class: "img-responsive aspect"), landscaping %>
-         </div>
         <br>
         <div class="caption">
           <h4><strong><%= landscaping.company_name %></strong></h4>
@@ -43,6 +42,7 @@
         <td><%= link_to 'Edit', edit_landscaping_path(landscaping), class: "btn btn-success" %></td>
         <td><%= link_to 'Destroy', landscaping, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-success" %></td>
         <% end %>
+        </div>
         </div>
           </div>
     <% end %>
