@@ -23,7 +23,8 @@
      <% @landscapings.each do |landscaping| %>
       <div class="col-md-3">
          <div class="thumbnail">
-        <%= link_to image_tag(landscaping.image.url), landscaping %><br>
+        <%= link_to image_tag(landscaping.image.url), landscaping %>
+        </div><br>
         <div class="caption">
           <h4><strong><%= landscaping.company_name %></strong></h4>
           <strong><th><%= label_tag :nil, t('servicecompanywebsite') %></th></strong><br>
@@ -43,7 +44,6 @@
         <% end %>
         </div>
           </div>
-    </div>
     <% end %>
     </div>
 </div>
