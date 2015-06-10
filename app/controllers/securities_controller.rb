@@ -25,7 +25,7 @@ class SecuritiesController < ApplicationController
   end
 
   def create
-   @security = Staging.new(security_params)
+   @security = Security.new(security_params)
     respond_to do |format|
       if @security.save
         format.html { redirect_to @security, notice: 'Service was successfully created.' }
