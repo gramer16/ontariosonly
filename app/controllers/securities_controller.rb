@@ -1,5 +1,6 @@
 class SecuritiesController < ApplicationController
   before_action :set_security, only: [:show, :edit, :update, :destroy]
+  before_action :check_user, only: [:destroy, :edit]
   def search
     if params[:search].present?
       @securities = Security.search(params[:search])
@@ -25,7 +26,6 @@ class SecuritiesController < ApplicationController
 
   def create
    @security = Staging.new(security_params)
-     @security.user_id = current_user.id
     respond_to do |format|
       if @security.save
         format.html { redirect_to @security, notice: 'Service was successfully created.' }
@@ -65,4 +65,9 @@ end
     def security_params
       params.require(:security).permit(:company_name, :company_description, :address, :city, :zipcode, :contact_name, :company_website, :company_phone, :email, :image)
     end
+    def check_user
+        unless current_user.admin?
+         redirect_to root_url, alert: "Sorry, Only Ontario's Only Admin can Delete a Subscription"
+    end
+  end
 end
