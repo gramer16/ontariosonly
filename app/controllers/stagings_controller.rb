@@ -24,7 +24,6 @@ class StagingsController < ApplicationController
 
   def create
     @staging = Staging.new(staging_params)
-     @staging.user_id = current_user.id
     respond_to do |format|
       if @staging.save
         format.html { redirect_to @staging, notice: 'Service was successfully created.' }
