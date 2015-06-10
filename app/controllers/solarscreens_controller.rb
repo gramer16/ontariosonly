@@ -1,5 +1,6 @@
 class SolarscreensController < ApplicationController
   before_action :set_solarscreen, only: [:show, :edit, :update, :destroy]
+  before_action :check_user, only: [:destroy, :edit]
   def search
     if params[:search].present?
       @solarscreens = Solarscreen.search(params[:search])
@@ -24,7 +25,6 @@ class SolarscreensController < ApplicationController
 
   def create
     @solarscreen = Staging.new(solarscreen_params)
-     @solarscreen.user_id = current_user.id
     respond_to do |format|
       if @solarscreen.save
         format.html { redirect_to @solarscreen, notice: 'Service was successfully created.' }
@@ -64,4 +64,9 @@ end
     def solarscreen_params
       params.require(:solarscreen).permit(:company_name, :company_description, :address, :city, :zipcode, :contact_name, :company_website, :company_phone, :email, :image)
     end
+     def check_user
+        unless current_user.admin?
+         redirect_to root_url, alert: "Sorry, Only Ontario's Only Admin can Delete a Subscription"
+    end
+  end
 end
