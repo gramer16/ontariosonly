@@ -1,5 +1,6 @@
 class StagingsController < ApplicationController
   before_action :set_staging, only: [:show, :edit, :update, :destroy]
+  before_action :check_user, only: [:destroy, :edit]
   def search
     if params[:search].present?
        @stagings = Staging.search(params[:search])
