@@ -25,7 +25,7 @@ class SepticsController < ApplicationController
   end
 
   def create
-    @septic = Staging.new(septic_params)
+    @septic = Septic.new(septic_params)
     respond_to do |format|
       if @septic.save
         format.html { redirect_to @septic, notice: 'Service was successfully created.' }
