@@ -24,7 +24,7 @@ class SolarscreensController < ApplicationController
   end
 
   def create
-    @solarscreen = Staging.new(solarscreen_params)
+    @solarscreen = Solarscreen.new(solarscreen_params)
     respond_to do |format|
       if @solarscreen.save
         format.html { redirect_to @solarscreen, notice: 'Service was successfully created.' }
