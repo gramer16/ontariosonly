@@ -1,5 +1,5 @@
-class ChangeZipcodeTypeInTitleCompanies < ActiveRecord::Migration
-   def self.up
+class ChangeZipcodeTypeInTitlecompanies < ActiveRecord::Migration
+  def self.up
     change_column :titlecompanies, :zipcode, :string
   end
  
