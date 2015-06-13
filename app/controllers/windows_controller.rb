@@ -9,8 +9,6 @@ class WindowsController < ApplicationController
     end
   end
 
-
-
   def index
     @windows = Window.all
   end
@@ -28,7 +26,6 @@ class WindowsController < ApplicationController
   def create
 
     @window = Window.new(window_params)
-     @window.user_id = current_user.id
     respond_to do |format|
       if @window.save
         format.html { redirect_to @window, notice: 'Service was successfully created.' }
