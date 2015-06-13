@@ -26,7 +26,7 @@ class TermiteinspectorsController < ApplicationController
   end
 
   def create
-    @termiteinspector = Termiteinspector.new(titlecompany_params)
+    @termiteinspector = Termiteinspector.new(termiteinspector_params)
     respond_to do |format|
       if @termiteinspector.save
         format.html { redirect_to @termiteinspector, notice: 'Service was successfully created.' }
