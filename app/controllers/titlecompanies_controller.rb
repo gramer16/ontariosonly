@@ -26,7 +26,6 @@ class TitlecompaniesController < ApplicationController
 
   def create
    @titlecompany = Titlecompany.new(titlecompany_params)
-     @titlecompany.user_id = current_user.id
     respond_to do |format|
       if @titlecompany.save
         format.html { redirect_to @titlecompany, notice: 'Service was successfully created.' }
