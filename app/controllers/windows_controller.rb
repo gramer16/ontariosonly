@@ -1,6 +1,6 @@
 class WindowsController < ApplicationController
   before_action :set_window, only: [:show, :edit, :update, :destroy]
-  
+  before_action :check_user, only: [:destroy]
   def search
     if params[:search].present?
        @windows = Window.search(params[:search])
@@ -70,4 +70,9 @@ class WindowsController < ApplicationController
     def window_params
       params.require(:window).permit(:company_name, :company_description, :address, :city, :zipcode, :contact_name, :company_website, :company_phone, :email, :image)
     end
+    def check_user
+        unless current_user.admin?
+         redirect_to root_url, alert: "Sorry, Only Ontario's Only Admin can Delete a Subscription"
+    end
+  end
 end

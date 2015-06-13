@@ -1,5 +1,6 @@
 class TaxspecialistsController < ApplicationController
   before_action :set_taxspecialist, only: [:show, :edit, :update, :destroy]
+  before_action :check_user, only: [:destroy, :edit]
   def search
     if params[:search].present?
        @taxspecialists = Taxspecialist.search(params[:search])
@@ -25,7 +26,6 @@ class TaxspecialistsController < ApplicationController
 
   def create
      @taxspecialist = Taxspecialist.new(taxspecialist_params)
-     @taxspecialist.user_id = current_user.id
     respond_to do |format|
       if @taxspecialist.save
         format.html { redirect_to @taxspecialist, notice: 'Service was successfully created.' }
@@ -66,8 +66,8 @@ end
       params.require(:taxspecialist).permit(:company_name, :company_description, :address, :city, :zipcode, :contact_name, :company_website, :company_phone, :email, :image)
     end
     def check_user
-      if current_user != @subscriptionpackage.user
-        redirect_to root_url, alert: "Sorry, this listing belongs to someone else"
-      end
+        unless current_user.admin?
+         redirect_to root_url, alert: "Sorry, Only Ontario's Only Admin can Delete a Subscription"
+    end
   end
 end

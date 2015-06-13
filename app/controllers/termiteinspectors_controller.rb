@@ -1,5 +1,6 @@
 class TermiteinspectorsController < ApplicationController
   before_action :set_termiteinspector, only: [:show, :edit, :update, :destroy]
+  before_action :check_user, only: [:destroy]
   def search
     if params[:search].present?
        @termiteinspectors = Termiteinspector.search(params[:search])
@@ -26,7 +27,6 @@ class TermiteinspectorsController < ApplicationController
 
   def create
     @termiteinspector = Termiteinspector.new(titlecompany_params)
-     @termiteinspector.user_id = current_user.id
     respond_to do |format|
       if @termiteinspector.save
         format.html { redirect_to @termiteinspector, notice: 'Service was successfully created.' }
@@ -66,4 +66,9 @@ end
     def termiteinspector_params
       params.require(:termiteinspector).permit(:company_name, :company_description, :address, :city, :zipcode, :contact_name, :company_website, :company_phone, :email, :image)
     end
+    def check_user
+        unless current_user.admin?
+         redirect_to root_url, alert: "Sorry, Only Ontario's Only Admin can Delete a Subscription"
+    end
+  end
 end

@@ -1,6 +1,6 @@
 class TitlecompaniesController < ApplicationController
   before_action :set_titlecompany, only: [:show, :edit, :update, :destroy]
-  
+  before_action :check_user, only: [:destroy]
   def search
     if params[:search].present?
        @titlecompanies = Titlecompany.search(params[:search])
@@ -66,4 +66,9 @@ class TitlecompaniesController < ApplicationController
     def titlecompany_params
       params.require(:titlecompany).permit(:company_name, :company_description, :address, :city, :zipcode, :contact_name, :company_website, :company_phone, :email, :image)
     end
+    def check_user
+        unless current_user.admin?
+         redirect_to root_url, alert: "Sorry, Only Ontario's Only Admin can Delete a Subscription"
+    end
+  end
 end
