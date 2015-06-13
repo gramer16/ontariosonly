@@ -1,6 +1,6 @@
 class ChangeZipcodeTypeInTermiteinspectors < ActiveRecord::Migration
   def self.up
-    change_column :termiteinspectos, :zipcode, :string
+    change_column :termiteinspectors, :zipcode, :string
   end
  
   def self.down
