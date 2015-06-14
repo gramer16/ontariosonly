@@ -17,6 +17,7 @@ class ServicesController < ApplicationController
   end
 
   def show
+    @services = Service.where(service_type: @service.service_type)
   end
 
   def new
