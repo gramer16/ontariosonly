@@ -36,9 +36,10 @@
            <br>
            
            <td><%= link_to 'Show', mold, class: "btn btn-success" %></td>
-        
+        <% if user_signed_in? && current_user.admin? %>
         <td><%= link_to 'Edit', edit_mold_path(mold), class: "btn btn-success" %></td>
         <td><%= link_to 'Destroy', mold, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-success" %></td>
+         <% end %>
         </div>
       </div>
     </div>
