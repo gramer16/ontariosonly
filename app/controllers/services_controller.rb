@@ -12,14 +12,8 @@ class ServicesController < ApplicationController
 
 
   def index
-    if params[:service_type] == "Siding and Stucco"
-      @services = Service.find(params[:service_type])
-    else
-      if params[:service_type] == "Cement"
-        @services = Service.find(params[:service_type])
-      else
+   
     @services = Service.all
-   end
   end
 
   def show
