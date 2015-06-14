@@ -13,6 +13,8 @@ class ServicesController < ApplicationController
 
   def index
     @services = Service.where(:service_type => ["Cement"])
+    @services = Service.where(:service_type => ["Siding and Stucco"])
+    @services = Service.where(:service_type => ["Appliance Sale"])
   end
 
   def show
