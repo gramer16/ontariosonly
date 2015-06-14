@@ -15,8 +15,10 @@ class ServicesController < ApplicationController
     if params[:service_type] == "Siding and Stucco"
       @services = Service.service_type(params[:service_type])
     else
+      if params[:service_type] == "Cement"
+    else
     @services = Service.all
-  end
+   end
   end
 
   def show
