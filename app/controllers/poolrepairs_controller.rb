@@ -1,5 +1,6 @@
 class PoolrepairsController < ApplicationController
   before_action :set_poolrepair, only: [:show, :edit, :update, :destroy]
+   before_action :check_user, only: [:destroy, :edit]
   def search
     if params[:search].present?
       @poolrepairs = Poolrepair.search(params[:search])
@@ -24,7 +25,6 @@ class PoolrepairsController < ApplicationController
 
   def create
      @poolrepair = Poolrepair.new(poolrepair_params)
-     @poolrepair.user_id = current_user.id
     respond_to do |format|
       if @poolrepair.save
         format.html { redirect_to @poolrepair, notice: 'Service was successfully created.' }
@@ -64,4 +64,9 @@ end
     def poolrepair_params
       params.require(:poolrepair).permit(:company_name, :company_description, :address, :city, :zipcode, :contact_name, :company_website, :company_phone, :email, :image)
     end
+    def check_user
+        unless current_user.admin?
+         redirect_to root_url, alert: "Sorry, Only Ontario's Only Admin can Delete a Subscription"
+    end
+  end
 end
