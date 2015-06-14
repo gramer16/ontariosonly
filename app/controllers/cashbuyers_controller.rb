@@ -69,7 +69,7 @@ end
     end
 
     def cashbuyer_params
-      params.require(:cashbuyer).permit(:company_name, :company_description, :address, :city, :zipcode, :contact_name, :company_website, :company_phone, :email)
+      params.require(:cashbuyer).permit(:company_name, :company_description, :address, :city, :zipcode, :contact_name, :company_website, :company_phone, :email, :image)
     end
     def check_user
         unless current_user.admin?
