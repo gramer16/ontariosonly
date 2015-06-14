@@ -12,11 +12,8 @@ class ServicesController < ApplicationController
 
 
   def index
-   if Service.find()
-    @services = Service.where(:service_type => ["Cement"])
-   else
-    @services = Service.where(:service_type => ["Siding and Stucco"])
-   end
+    @services = Service.where(:service_type => ["Cement"]) if params["Cement"].present?
+    @services = Service.where(:service_type => ["Siding and Stucco"]) if params["Siding and Stucco"].present?
   end
 
   def show
