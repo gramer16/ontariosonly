@@ -60,7 +60,9 @@
             </div>
               <%= image_tag("appliancesale.png", :size => "100x100", :alt => "Septics", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
+            <% if service.service_type == "Sidding and Stucco" %>
             <%= link_to t('searchservices'), services_path, class: "btn btn-default", data: {no_turbolink: true} %>
+            <% end %>
         </div>
         </div>
          <div class="col-md-4 feature">
@@ -225,6 +227,7 @@
             </div>
              <%= image_tag("eavestrouphing.jpg", :size => "100x100", :alt => "Countertop", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
+
             <%= link_to t('searchservices'), privatefirms_path, class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
