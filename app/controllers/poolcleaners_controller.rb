@@ -1,5 +1,6 @@
 class PoolcleanersController < ApplicationController
   before_action :set_poolcleaner, only: [:show, :edit, :update, :destroy]
+  before_action :check_user, only: [:destroy, :edit]
   def search
     if params[:search].present?
       @poolcleaners = Poolcleaner.search(params[:search])
@@ -24,7 +25,6 @@ class PoolcleanersController < ApplicationController
 
   def create
      @poolcleaner = Poolcleaner.new(poolcleaner_params)
-     @poolcleaner.user_id = current_user.id
     respond_to do |format|
       if @poolcleaner.save
         format.html { redirect_to @poolcleaner, notice: 'Service was successfully created.' }
@@ -64,4 +64,9 @@ end
     def poolcleaner_params
       params.require(:poolcleaner).permit(:company_name, :company_description, :address, :city, :zipcode, :contact_name, :company_website, :company_phone, :email, :image)
     end
+    def check_user
+        unless current_user.admin?
+         redirect_to root_url, alert: "Sorry, Only Ontario's Only Admin can Delete a Subscription"
+    end
+  end
 end
