@@ -29,10 +29,9 @@ class CustomcabinetsController < ApplicationController
   end
 
   def create
-
     @customcabinet = Customcabinet.new(customcabinet_params)
     respond_to do |format|
-      if  @flooring.save
+      if  @customcabinet.save
         format.html { redirect_to  @customcabinet, notice: 'Service was successfully created.' }
         format.json { render :show, status: :created, location: @customcabinet }
       else
