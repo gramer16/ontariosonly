@@ -27,7 +27,6 @@ class PropertymanagementfirmsController < ApplicationController
   def create
 
     @propertymanagementfirm = Propertymanagementfirm.new(propertymanagementfirm_params)
-     @propertymanagementfirm.user_id = current_user.id
     respond_to do |format|
       if @propertymanagementfirm.save
         format.html { redirect_to @propertymanagementfirm, notice: 'Service was successfully created.' }

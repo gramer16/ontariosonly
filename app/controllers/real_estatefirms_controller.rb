@@ -1,5 +1,6 @@
 class RealEstatefirmsController < ApplicationController
   before_action :set_real_estatefirm, only: [:show, :edit, :update, :destroy]
+    before_action :check_user, only: [:destroy, :edit]
     def search
     if params[:search].present?
      @real_estatefirms = RealEstatefirm.search(params[:search])
@@ -25,7 +26,6 @@ class RealEstatefirmsController < ApplicationController
 
   def create
      @real_estatefirm = RealEstatefirm.new(real_estatefirm_params)
-     @real_estatefirm.user_id = current_user.id
     respond_to do |format|
       if @real_estatefirm.save
         format.html { redirect_to @real_estatefirm, notice: 'Service was successfully created.' }
@@ -64,5 +64,10 @@ end
 
     def real_estatefirm_params
       params.require(:real_estatefirm).permit(:company_name, :company_description, :address, :city, :zipcode, :contact_name, :company_website, :company_phone, :image)
+    end
+    def check_user
+      unless current_user.admin?
+        redirect_to root_url, alert: "Sorry, this service just can be post by the Website Administrator"
+      end
     end
 end
