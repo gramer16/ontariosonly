@@ -1,6 +1,6 @@
 class ChangeZipcodeTypeInCommercialpropertiesforsales < ActiveRecord::Migration
   def self.up
-    change_column :comercialpropertiesforsales, :zipcode, :string
+    change_column :commercialpropertiesforsales, :zipcode, :string
   end
  
   def self.down
