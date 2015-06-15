@@ -47,7 +47,6 @@ class CommercialpropertiesforsalesController < ApplicationController
   # POST /commercialpropertiesforsales.json
   def create
     @commercialpropertiesforsale = Commercialpropertiesforsale.new(commercialpropertiesforsale_params)
-     @commercialpropertiesforsale.user_id = current_user.id
     respond_to do |format|
       if @commercialpropertiesforsale.save
         format.html { redirect_to @commercialpropertiesforsale, notice: 'Commercialpropertiesforsale was successfully created.' }
