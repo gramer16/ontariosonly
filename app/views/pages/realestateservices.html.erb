@@ -297,7 +297,7 @@
             </div>
              <%= image_tag("fireplace.png", :size => "100x100", :alt => "Flooring", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <%= link_to t('searchservices'), privatefirms_path, class: "btn btn-default", data: {no_turbolink: true} %>
+            <%= link_to t('searchservices'), services_path(@service), class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
         <div class="col-md-4 feature">
@@ -393,7 +393,7 @@
             </div>
             <%= image_tag("lighting.jpg", :size => "100x100", :alt => "Insulation", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <%= link_to t('searchservices'), privatefirms_path, class: "btn btn-default", data: {no_turbolink: true} %>
+            <%= link_to t('searchservices'), services_path(@service), class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
 </div>
@@ -700,7 +700,7 @@
             </div>
               <%= image_tag("solar.jpg", :size => "100x100", :alt => "Septics", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <%= link_to t('searchservices'), privatefirms_path, class: "btn btn-default", data: {no_turbolink: true} %>
+            <%= link_to t('searchservices'), services_path(@service), class: "btn btn-default", data: {no_turbolink: true} %>
             
         </div>
         </div>
@@ -712,7 +712,7 @@
             </div>
              <%= image_tag("senior.jpg", :size => "100x100", :alt => "Septics", :style =>"margin-right:25px; margin-top:10px;" ) %>
             <p></p>
-            <%= link_to t('searchservices'), privatefirms_path, class: "btn btn-default", data: {no_turbolink: true} %>
+            <%= link_to t('searchservices'), services_path(@service), class: "btn btn-default", data: {no_turbolink: true} %>
         </div>
         </div>
          <div class="col-md-4 feature">
