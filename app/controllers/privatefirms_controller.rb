@@ -1,5 +1,6 @@
 class PrivatefirmsController < ApplicationController
   before_action :set_privatefirm, only: [:show, :edit, :update, :destroy]
+  before_action :check_user, only: [:destroy, :edit]
   def search
     if params[:search].present?
      @privatefirms = Privatefirm.search(params[:search])
@@ -26,7 +27,6 @@ class PrivatefirmsController < ApplicationController
 
   def create
     @privatefirm = Privatefirm.new(privatefirm_params)
-     @privatefirm.user_id = current_user.id
     respond_to do |format|
       if @privatefirm.save
         format.html { redirect_to @privatefirm, notice: 'Service was successfully created.' }
@@ -66,5 +66,10 @@ end
 
     def privatefirm_params
       params.require(:privatefirm).permit(:company_name, :company_description, :address, :city, :zipcode, :contact_name, :company_website, :company_phone, :image)
+    end
+     def check_user
+      unless current_user.admin?
+        redirect_to root_url, alert: "Sorry, this service just can be post by the Website Administrator"
+      end
     end
 end
