@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150614193029) do
+ActiveRecord::Schema.define(version: 20150615195218) do
 
   create_table "accountants", force: true do |t|
     t.string   "company_name"
@@ -105,7 +105,7 @@ ActiveRecord::Schema.define(version: 20150614193029) do
     t.string   "property_type"
     t.string   "action"
     t.text     "address"
-    t.integer  "zipcode"
+    t.string   "zipcode"
     t.string   "city"
     t.decimal  "price"
     t.string   "realestatecompany"

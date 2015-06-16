@@ -23,10 +23,6 @@ class CommercialpropertiesforsalesController < ApplicationController
 
   def index
     @commercialpropertiesforsales = Commercialpropertiesforsale.all
-    @commercialpropertiesforsales = @commercialpropertiesforsales.where(action: params["action"]) if params["action"].present?
-    @commercialpropertiesforsales = @commercialpropertiesforsales.where(property_type: params["property_type"]) if params["property_type"].present?
-    @commercialpropertiesforsales = @commercialpropertiesforsales.where(status: params["status"]) if params["status"].present?
-    @commercialpropertiesforsales = @commercialpropertiesforsales.where(construction_type: params["construction_type"]) if params["construction_type"].present?
   end
 
   # GET /commercialpropertiesforsales/1
