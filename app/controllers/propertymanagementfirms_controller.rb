@@ -25,7 +25,6 @@ class PropertymanagementfirmsController < ApplicationController
   end
 
   def create
-
     @propertymanagementfirm = Propertymanagementfirm.new(propertymanagementfirm_params)
     respond_to do |format|
       if @propertymanagementfirm.save
