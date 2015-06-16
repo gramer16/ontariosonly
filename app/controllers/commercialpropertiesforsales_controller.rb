@@ -23,6 +23,7 @@ class CommercialpropertiesforsalesController < ApplicationController
 
   def index
     @commercialpropertiesforsales = Commercialpropertiesforsale.all
+    
   end
 
   # GET /commercialpropertiesforsales/1

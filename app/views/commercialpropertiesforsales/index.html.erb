@@ -65,7 +65,7 @@
       <h3><strong><%= commercialpropertiesforsale.address %></strong></h3>
       <h4><strong><th><%= label_tag :nil, t('price') %></th> <%= number_to_currency(commercialpropertiesforsale.price) %></strong></h4>
       <p>
-        <p><%= t('listed_by', user: commercialpropertiesforsale.user.name) %></p>
+        
         <th><%= label_tag :type_of_Property, t('propertytype') %></th> <%= commercialpropertiesforsale.property_type %><br>
         <th><%= label_tag :Purchase_or_Lease, t('salerent') %></th> <%= commercialpropertiesforsale.action %><br>
         <th><%= label_tag :nil, t('city') %></th> <%= commercialpropertiesforsale.city %><br>
