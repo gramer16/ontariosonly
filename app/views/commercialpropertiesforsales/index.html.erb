@@ -81,10 +81,10 @@
           <th><%= label_tag :nil, t('floornumbers') %></th> <%= commercialpropertiesforsale.floorsnumber %><br>
           <th><%= label_tag :construction_Type, t('construction') %></th> <%= commercialpropertiesforsale.construction_type %>
       </p>
-        <td><%= link_to 'Show', commercialpropertiesforsale, class: "btn btn-warning" %></td>
+        <td><%= link_to 'Show', commercialpropertiesforsale, class: "btn btn-success" %></td>
         <% if (user_signed_in?) && (current_user == commercialpropertiesforsale.user) %>
-        <td><%= link_to 'Edit', edit_commercialpropertiesforsale_path(commercialpropertiesforsale), class: "btn btn-warning" %></td>
-        <td><%= link_to 'Destroy', commercialpropertiesforsale, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-warning" %></td>
+        <td><%= link_to 'Edit', edit_commercialpropertiesforsale_path(commercialpropertiesforsale), class: "btn btn-success" %></td>
+        <td><%= link_to 'Destroy', commercialpropertiesforsale, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-success" %></td>
          <% end %>
     </div>
   </div>
