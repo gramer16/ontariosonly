@@ -96,5 +96,7 @@
 
 <br>
 <div class="left">
+  <% if user_signed_in? %>
   <%= link_to t('new_commercial'), new_commercialpropertiesforsale_path, class: "btn btn-success" %>
+  <% end %>
 </div>
